@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut Screen One" translatesAutoresizingMaskIntoConstraints="NO" id="W08-q5-lWP">
+                                <rect key="frame" x="-12" y="-14" width="624" height="628"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-Ox-znW">
+                                <rect key="frame" x="185" y="115" width="231" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="Lyg-nS-GZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Start Game!">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tdl-02-Kf7" kind="show" id="fCe-9O-i7s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W08-q5-lWP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-28" id="6e9-6F-jfx"/>
+                            <constraint firstItem="W08-q5-lWP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-14" id="7ec-FI-l4V"/>
+                            <constraint firstItem="W08-q5-lWP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9n7-Hl-xpp"/>
+                            <constraint firstItem="LoQ-Ox-znW" firstAttribute="centerX" secondItem="W08-q5-lWP" secondAttribute="centerX" id="IIA-QV-Nru"/>
+                            <constraint firstItem="W08-q5-lWP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aew-nO-P9P"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LoQ-Ox-znW" secondAttribute="bottom" constant="438" id="gFG-Vd-p8g"/>
+                            <constraint firstItem="LoQ-Ox-znW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="95" id="lpu-MR-IQI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--First Level View Controller-->
+        <scene sceneID="FDa-9J-J34">
+            <objects>
+                <viewController id="tdl-02-Kf7" customClass="FirstLevelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnH-Uk-h0H"/>
+                        <viewControllerLayoutGuide type="bottom" id="pSo-g9-UMV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rzm-p6-eOB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceGameFirstLevel" translatesAutoresizingMaskIntoConstraints="NO" id="ISL-yh-zvs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastronautAstronaut" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-vI-zke">
+                                <rect key="frame" x="258" y="237" width="85" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-7w-atU">
+                                <rect key="frame" x="201" y="81" width="199" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="jv9-mc-iDJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="tdl-02-Kf7" eventType="touchUpInside" id="HI0-qc-bzg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t6m-7w-atU" firstAttribute="top" secondItem="vnH-Uk-h0H" secondAttribute="bottom" constant="61" id="2M8-Jr-RtP"/>
+                            <constraint firstItem="ISL-yh-zvs" firstAttribute="leading" secondItem="Rzm-p6-eOB" secondAttribute="leading" id="Abr-5N-DQ5"/>
+                            <constraint firstItem="jvA-vI-zke" firstAttribute="centerX" secondItem="ISL-yh-zvs" secondAttribute="centerX" constant="0.5" id="BBL-rV-mnc"/>
+                            <constraint firstAttribute="trailing" secondItem="ISL-yh-zvs" secondAttribute="trailing" id="EN6-Iw-B0L"/>
+                            <constraint firstItem="jvA-vI-zke" firstAttribute="top" secondItem="t6m-7w-atU" secondAttribute="bottom" constant="95" id="Osd-CE-g1L"/>
+                            <constraint firstItem="ISL-yh-zvs" firstAttribute="bottom" secondItem="pSo-g9-UMV" secondAttribute="top" id="YdW-0b-SBN"/>
+                            <constraint firstItem="ISL-yh-zvs" firstAttribute="centerX" secondItem="t6m-7w-atU" secondAttribute="centerX" constant="-0.5" id="igx-1m-8Q8"/>
+                            <constraint firstItem="ISL-yh-zvs" firstAttribute="top" secondItem="Rzm-p6-eOB" secondAttribute="top" id="nFz-rE-x4m"/>
+                            <constraint firstItem="jvA-vI-zke" firstAttribute="centerY" secondItem="ISL-yh-zvs" secondAttribute="centerY" constant="-0.5" id="vPT-o6-FN6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fastronaut" destination="jvA-vI-zke" id="BgK-es-Lu4"/>
+                        <outlet property="startGame" destination="t6m-7w-atU" id="DOx-ia-fGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDx-6y-IaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="286"/>
+        </scene>
+        <!--Second Level View Controller-->
+        <scene sceneID="CXh-VG-yJx">
+            <objects>
+                <viewController id="zMr-Z9-x8x" customClass="SecondLevelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1jQ-2s-4lf"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTI-1l-vHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jsO-Z4-JHG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpaceGameSecondLevel" translatesAutoresizingMaskIntoConstraints="NO" id="qHd-0V-JLk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fS1-JR-Zg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fastronaut Screen One" width="335" height="550"/>
+        <image name="SpaceGameFirstLevel" width="335" height="550"/>
+        <image name="SpaceGameSecondLevel" width="335" height="550"/>
+        <image name="fastronautAstronaut" width="85" height="125"/>
+    </resources>
+</document>
