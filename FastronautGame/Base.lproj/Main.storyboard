@@ -65,6 +65,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceGameFirstLevel" translatesAutoresizingMaskIntoConstraints="NO" id="ISL-yh-zvs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="GAI-Y3-Ov4">
+                                <rect key="frame" x="333" y="410" width="125" height="60"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastronautAstronaut" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-vI-zke">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
@@ -81,6 +84,9 @@
                                     <action selector="startGame:" destination="tdl-02-Kf7" eventType="touchUpInside" id="HI0-qc-bzg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="qOH-Lf-FJL">
+                                <rect key="frame" x="258" y="140" width="125" height="60"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,8 +102,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomBullet" destination="GAI-Y3-Ov4" id="cEs-Mx-QWW"/>
                         <outlet property="fastronaut" destination="jvA-vI-zke" id="BgK-es-Lu4"/>
                         <outlet property="startGame" destination="t6m-7w-atU" id="DOx-ia-fGX"/>
+                        <outlet property="topBullet" destination="qOH-Lf-FJL" id="yjx-ja-s9j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDx-6y-IaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,6 +140,7 @@
         <image name="Fastronaut Screen One" width="335" height="550"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameSecondLevel" width="335" height="550"/>
+        <image name="bullet" width="100" height="50"/>
         <image name="fastronautAstronaut" width="85" height="125"/>
     </resources>
 </document>

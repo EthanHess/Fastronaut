@@ -16,6 +16,7 @@
 		27CAC72D1AE0B945007B67C4 /* FastronautGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC72C1AE0B945007B67C4 /* FastronautGameTests.m */; };
 		27CAC7481AE24F06007B67C4 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */; };
 		27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */; };
+		27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLevelViewController.m; sourceTree = "<group>"; };
 		27CDDBB61AE7FE2B0073AA27 /* SecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelViewController.h; sourceTree = "<group>"; };
 		27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
+		27CDDBEB1AE84B3E0073AA27 /* ThirdLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdLevelViewController.h; sourceTree = "<group>"; };
+		27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdLevelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */,
 				27CDDBB61AE7FE2B0073AA27 /* SecondLevelViewController.h */,
 				27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */,
+				27CDDBEB1AE84B3E0073AA27 /* ThirdLevelViewController.h */,
+				27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */,
 				27CAC71D1AE0B944007B67C4 /* Images.xcassets */,
 				27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */,
 				27CAC7101AE0B944007B67C4 /* Supporting Files */,
@@ -242,6 +247,7 @@
 				27CAC7191AE0B944007B67C4 /* ViewController.m in Sources */,
 				27CAC7161AE0B944007B67C4 /* AppDelegate.m in Sources */,
 				27CAC7131AE0B944007B67C4 /* main.m in Sources */,
+				27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

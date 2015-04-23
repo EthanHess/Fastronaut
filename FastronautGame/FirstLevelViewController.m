@@ -24,7 +24,36 @@
     self.startGame.hidden = YES;
     self.astronautTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(astronautMoving) userInfo:nil repeats:YES];
     
+    [self placeBullets];
+    
+    self.bulletTimer = [NSTimer scheduledTimerWithTimeInterval:0.0025 target:self selector:@selector(bulletsMoving) userInfo:nil repeats:YES];
+    
 }
+
+-(void)bulletsMoving {
+    
+    self.topBullet.center = CGPointMake(self.topBullet.center.x - 1, self.topBullet.center.y);
+    self.bottomBullet.center = CGPointMake(self.bottomBullet.center.x - 1, self.bottomBullet.center.y);
+    
+    if (self.topBullet.center.x < - 35) {
+        [self placeBullets];
+    }
+    
+}
+
+
+-(void)placeBullets {
+    
+    spaceBetweenBullets = arc4random() %250;
+    
+    randomTopBulletPosition = arc4random() %350;
+    randomTopBulletPosition = randomTopBulletPosition - 100;
+    randomBottomBulletPosition = randomTopBulletPosition + spaceBetweenBullets;
+    
+    self.topBullet.center = CGPointMake(340, randomTopBulletPosition);
+    self.bottomBullet.center = CGPointMake(340, randomBottomBulletPosition);
+}
+
 
 -(void)astronautMoving {
     
@@ -53,11 +82,11 @@
 }
 
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 @end
