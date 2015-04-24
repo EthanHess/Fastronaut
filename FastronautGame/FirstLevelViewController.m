@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
+//TEST
+
 -(IBAction)startGame:(id)sender {
     
     self.startGame.hidden = YES;
