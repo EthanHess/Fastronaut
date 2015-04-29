@@ -117,7 +117,7 @@
     
     scoreNumber = scoreNumber + 1;
     
-    if (scoreNumber > 10) {
+    if (scoreNumber > 1) {
         [self.astronautTimer invalidate];
         [self.bulletTimer invalidate];
         

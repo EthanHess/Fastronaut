@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondLevelViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startGame;
+@property (weak, nonatomic) IBOutlet UIImageView *scubanaut;
+@property (weak, nonatomic) IBOutlet UIImageView *piranha;
+@property (weak, nonatomic) IBOutlet UIButton *gameOver;
+@property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (nonatomic, strong) NSTimer *scubaTimer; 
 
 @end

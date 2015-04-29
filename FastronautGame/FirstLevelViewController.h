@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 int astroFlight;
-int spaceBetweenBullets; 
 int randomTopBulletPosition;
-//int randomBottomBulletPosition;
 int scoreNumber;
 
 @interface FirstLevelViewController : UIViewController
