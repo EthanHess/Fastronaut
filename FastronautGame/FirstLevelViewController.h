@@ -19,7 +19,6 @@ int scoreNumber;
 @property (weak, nonatomic) IBOutlet UIButton *startGame;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (weak, nonatomic) IBOutlet UIImageView *topBullet;
-@property (weak, nonatomic) IBOutlet UIImageView *bottomBullet;
 @property (weak, nonatomic) IBOutlet UIButton *Exit;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 @property (nonatomic, strong) NSTimer *astronautTimer;

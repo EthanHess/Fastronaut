@@ -19,7 +19,6 @@
     
     self.Exit.hidden = YES;
     self.proceedButton.hidden = YES;
-    self.bottomBullet.hidden = YES;
     scoreNumber = 0;
     
 }
@@ -39,8 +38,6 @@
     
     self.topBullet.center = CGPointMake(self.topBullet.center.x - 1, self.topBullet.center.y);
     
-//  self.bottomBullet.center = CGPointMake(self.bottomBullet.center.x - 1, self.bottomBullet.center.y);
-    
     if (self.topBullet.center.x < - 35) {
         [self placeBullets];
     }
@@ -53,9 +50,6 @@
         [self gameOver];
     }
     
-//  if (CGRectIntersectsRect(self.fastronaut.frame, self.bottomBullet.frame)) {
-//        [self gameOver];
-//  }
     
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
@@ -70,19 +64,13 @@
 
 -(void)placeBullets {
     
-//  spaceBetweenBullets = arc4random() %400;
     
     int frame = self.view.frame.size.height;
     
     randomTopBulletPosition = arc4random() %frame;
     
-//  randomTopBulletPosition = randomTopBulletPosition - 100;
-    
-//  randomBottomBulletPosition = randomTopBulletPosition + spaceBetweenBullets;
-    
     self.topBullet.center = CGPointMake(380, randomTopBulletPosition);
     
-//  self.bottomBullet.center = CGPointMake(340, randomBottomBulletPosition);
     
 }
 
@@ -120,7 +108,6 @@
     
     self.Exit.hidden = NO;
     self.topBullet.hidden = YES;
-    self.bottomBullet.hidden = YES;
     self.fastronaut.hidden = YES; 
     
     
