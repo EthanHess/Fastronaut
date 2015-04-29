@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.gameOver.hidden = YES;
+    self.proceedButton.hidden = YES;
+    scoreNumber = 0;
+    
+}
+
+- (IBAction)startGame:(id)sender {
+    
+    
 }
 
 
