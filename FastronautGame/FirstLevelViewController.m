@@ -16,10 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.Exit.hidden = YES;
+    self.proceedButton.hidden = YES;
+    self.bottomBullet.hidden = YES;
+    scoreNumber = 0;
+    
 }
-
-//TEST
 
 -(IBAction)startGame:(id)sender {
     
@@ -28,17 +31,38 @@
     
     [self placeBullets];
     
-    self.bulletTimer = [NSTimer scheduledTimerWithTimeInterval:0.0025 target:self selector:@selector(bulletsMoving) userInfo:nil repeats:YES];
+    self.bulletTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(bulletsMoving) userInfo:nil repeats:YES];
     
 }
 
 -(void)bulletsMoving {
     
     self.topBullet.center = CGPointMake(self.topBullet.center.x - 1, self.topBullet.center.y);
-    self.bottomBullet.center = CGPointMake(self.bottomBullet.center.x - 1, self.bottomBullet.center.y);
+    
+//  self.bottomBullet.center = CGPointMake(self.bottomBullet.center.x - 1, self.bottomBullet.center.y);
     
     if (self.topBullet.center.x < - 35) {
         [self placeBullets];
+    }
+    
+    if (self.topBullet.center.x == 30) {
+        [self score];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.topBullet.frame)) {
+        [self gameOver];
+    }
+    
+//  if (CGRectIntersectsRect(self.fastronaut.frame, self.bottomBullet.frame)) {
+//        [self gameOver];
+//  }
+    
+    if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
+        [self gameOver];
+    }
+    
+    if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
+        [self gameOver];
     }
     
 }
@@ -46,14 +70,20 @@
 
 -(void)placeBullets {
     
-    spaceBetweenBullets = arc4random() %250;
+//  spaceBetweenBullets = arc4random() %400;
     
-    randomTopBulletPosition = arc4random() %350;
-    randomTopBulletPosition = randomTopBulletPosition - 100;
-    randomBottomBulletPosition = randomTopBulletPosition + spaceBetweenBullets;
+    int frame = self.view.frame.size.height;
     
-    self.topBullet.center = CGPointMake(340, randomTopBulletPosition);
-    self.bottomBullet.center = CGPointMake(340, randomBottomBulletPosition);
+    randomTopBulletPosition = arc4random() %frame;
+    
+//  randomTopBulletPosition = randomTopBulletPosition - 100;
+    
+//  randomBottomBulletPosition = randomTopBulletPosition + spaceBetweenBullets;
+    
+    self.topBullet.center = CGPointMake(380, randomTopBulletPosition);
+    
+//  self.bottomBullet.center = CGPointMake(340, randomBottomBulletPosition);
+    
 }
 
 
@@ -80,6 +110,34 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     astroFlight = 30;
+    
+}
+
+- (void)gameOver {
+    
+    [self.astronautTimer invalidate];
+    [self.bulletTimer invalidate];
+    
+    self.Exit.hidden = NO;
+    self.topBullet.hidden = YES;
+    self.bottomBullet.hidden = YES;
+    self.fastronaut.hidden = YES; 
+    
+    
+}
+
+- (void)score {
+    
+    scoreNumber = scoreNumber + 1;
+    
+    if (scoreNumber > 10) {
+        [self.astronautTimer invalidate];
+        [self.bulletTimer invalidate];
+        
+        self.proceedButton.hidden = NO;
+        self.topBullet.hidden = YES;
+        self.fastronaut.hidden = YES; 
+    }
     
 }
 
