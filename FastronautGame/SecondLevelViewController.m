@@ -27,11 +27,11 @@
     
     self.startGame.hidden = YES;
     
-    self.scubaTimer = [NSTimer timerWithTimeInterval:0.05 target:self selector:@selector(scubaMoving) userInfo:nil repeats:YES];
+    self.scubaTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(scubaMoving) userInfo:nil repeats:YES];
     
     [self placeObstacles];
     
-    self.obstacleTimer = [NSTimer timerWithTimeInterval:0.005 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:YES];
     
 }
 
@@ -112,7 +112,7 @@
     
     self.scubanaut.hidden = YES;
     self.gameOver.hidden = NO;
-    self.piranha.hidden = YES; 
+    self.piranha.hidden = YES;
     
 }
 
