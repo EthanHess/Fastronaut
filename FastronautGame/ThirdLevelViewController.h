@@ -10,4 +10,12 @@
 
 @interface ThirdLevelViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startGame;
+@property (weak, nonatomic) IBOutlet UIButton *tryAgain;
+@property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UIImageView *helicopter;
+@property (nonatomic, strong) NSTimer *fastroTimer;
+@property (nonatomic, strong) NSTimer *copterTimer; 
+
 @end

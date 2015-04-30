@@ -246,8 +246,75 @@
                     <view key="view" contentMode="scaleToFill" id="ubP-X0-gVz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CityLevelDay" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-yJ-7Wj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityUp" translatesAutoresizingMaskIntoConstraints="NO" id="98m-6J-WcH">
+                                <rect key="frame" x="258" y="237" width="85" height="125"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityCopter" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-fG-Pn0">
+                                <rect key="frame" x="471" y="215" width="120" height="90"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-6A-L8d">
+                                <rect key="frame" x="174" y="92" width="252" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2Mz-F6-Az1"/>
+                                    <constraint firstAttribute="width" constant="252" id="zhV-gD-mwA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin!">
+                                    <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhF-bX-MvY">
+                                <rect key="frame" x="160" y="246" width="280" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="vLQ-bs-UMS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M49-xD-cau">
+                                <rect key="frame" x="109" y="468" width="383" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Well Done! Proceed">
+                                    <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qhF-bX-MvY" firstAttribute="centerX" secondItem="JuW-6A-L8d" secondAttribute="centerX" id="1lN-yW-Fif"/>
+                            <constraint firstItem="M49-xD-cau" firstAttribute="leading" secondItem="ubP-X0-gVz" secondAttribute="leadingMargin" constant="93" id="Bxs-IJ-8wA"/>
+                            <constraint firstItem="ecp-yJ-7Wj" firstAttribute="top" secondItem="ubP-X0-gVz" secondAttribute="top" id="Gd9-D4-jXs"/>
+                            <constraint firstItem="qhF-bX-MvY" firstAttribute="centerX" secondItem="98m-6J-WcH" secondAttribute="centerX" id="KRV-ee-lP6"/>
+                            <constraint firstItem="ecp-yJ-7Wj" firstAttribute="bottom" secondItem="Cb7-oT-mXl" secondAttribute="top" id="UOD-ot-ChW"/>
+                            <constraint firstItem="M49-xD-cau" firstAttribute="centerX" secondItem="ecp-yJ-7Wj" secondAttribute="centerX" id="UTg-Re-Iek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gR0-fG-Pn0" secondAttribute="trailing" constant="-7" id="Ui1-Kt-ATa"/>
+                            <constraint firstItem="Cb7-oT-mXl" firstAttribute="top" secondItem="M49-xD-cau" secondAttribute="bottom" constant="69" id="XGA-HG-5zo"/>
+                            <constraint firstItem="gR0-fG-Pn0" firstAttribute="top" secondItem="4Dv-Ss-sgG" secondAttribute="bottom" constant="195" id="adW-1a-Yfa"/>
+                            <constraint firstItem="gR0-fG-Pn0" firstAttribute="leading" secondItem="qhF-bX-MvY" secondAttribute="trailing" constant="31" id="cCt-bP-Gpf"/>
+                            <constraint firstItem="JuW-6A-L8d" firstAttribute="top" secondItem="4Dv-Ss-sgG" secondAttribute="bottom" constant="72" id="co6-C3-ShF"/>
+                            <constraint firstItem="98m-6J-WcH" firstAttribute="top" secondItem="ubP-X0-gVz" secondAttribute="top" constant="237" id="crI-a6-yCT"/>
+                            <constraint firstItem="qhF-bX-MvY" firstAttribute="top" secondItem="ubP-X0-gVz" secondAttribute="top" constant="246" id="esf-dz-k3R"/>
+                            <constraint firstItem="ecp-yJ-7Wj" firstAttribute="leading" secondItem="ubP-X0-gVz" secondAttribute="leading" id="mmW-7K-BnT"/>
+                            <constraint firstItem="M49-xD-cau" firstAttribute="centerX" secondItem="qhF-bX-MvY" secondAttribute="centerX" id="pYd-5n-wst"/>
+                            <constraint firstAttribute="trailing" secondItem="ecp-yJ-7Wj" secondAttribute="trailing" id="uvr-lE-0RV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fastronaut" destination="98m-6J-WcH" id="vst-A6-n6w"/>
+                        <outlet property="helicopter" destination="gR0-fG-Pn0" id="pMP-6q-xTv"/>
+                        <outlet property="proceedButton" destination="M49-xD-cau" id="GnB-f7-5lK"/>
+                        <outlet property="startGame" destination="JuW-6A-L8d" id="VvG-MQ-0QR"/>
+                        <outlet property="tryAgain" destination="qhF-bX-MvY" id="VLj-G4-HyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8h-pA-8Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,10 +322,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CityLevelDay" width="335" height="550"/>
         <image name="Fastronaut Screen One" width="335" height="550"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
         <image name="bullet" width="100" height="50"/>
+        <image name="cityCopter" width="120" height="90"/>
+        <image name="cityUp" width="85" height="125"/>
         <image name="fastronautAstronaut" width="85" height="125"/>
         <image name="piranha" width="85" height="70"/>
         <image name="swimUp" width="85" height="125"/>
