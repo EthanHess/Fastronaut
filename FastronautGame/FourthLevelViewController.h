@@ -10,4 +10,11 @@
 
 @interface FourthLevelViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startGame;
+@property (weak, nonatomic) IBOutlet UIButton *tryAgain;
+@property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIImageView *iceDagger;
+@property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+
+
 @end
