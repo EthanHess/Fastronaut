@@ -364,6 +364,9 @@
                                     <color key="titleColor" red="1" green="0.10028221396365078" blue="0.23289629660738997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="gWu-3A-wTY" eventType="touchUpInside" id="VFJ-bZ-dFI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztk-Cb-MSO">
                                 <rect key="frame" x="169" y="261" width="262" height="77"/>
@@ -376,6 +379,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="gWu-3A-wTY" eventType="touchUpInside" id="mDJ-We-dgp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgS-5S-hKZ">
                                 <rect key="frame" x="101" y="459" width="398" height="83"/>
@@ -412,7 +418,7 @@
                         <outlet property="fastronaut" destination="Yiv-FG-3J5" id="ckf-iR-DeQ"/>
                         <outlet property="iceDagger" destination="eXp-mO-ytd" id="gMa-kr-c2y"/>
                         <outlet property="proceedButton" destination="kgS-5S-hKZ" id="DJB-Ie-Fne"/>
-                        <outlet property="startGame" destination="wKr-4i-WmC" id="Npn-uC-8ti"/>
+                        <outlet property="startGame" destination="wKr-4i-WmC" id="0zt-sl-9x4"/>
                         <outlet property="tryAgain" destination="ztk-Cb-MSO" id="rTT-Zz-Afi"/>
                     </connections>
                 </viewController>

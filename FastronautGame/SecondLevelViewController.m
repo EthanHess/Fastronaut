@@ -125,7 +125,7 @@
     
     scoreNumber = scoreNumber + 1;
     
-    if (scoreNumber > 5) {
+    if (scoreNumber > 1) {
         [self.scubaTimer invalidate];
         [self.obstacleTimer invalidate];
         
