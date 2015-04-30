@@ -82,7 +82,7 @@
                                     <action selector="startGame:" destination="tdl-02-Kf7" eventType="touchUpInside" id="HI0-qc-bzg"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="qOH-Lf-FJL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="qOH-Lf-FJL">
                                 <rect key="frame" x="258" y="140" width="125" height="60"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rr-8s-YEH">
@@ -349,11 +349,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Arrow" width="125" height="60"/>
         <image name="CityLevelDay" width="335" height="550"/>
         <image name="Fastronaut Screen One" width="335" height="550"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
-        <image name="bullet" width="100" height="50"/>
         <image name="cityCopter" width="120" height="90"/>
         <image name="cityUp" width="85" height="125"/>
         <image name="fastronautAstronaut" width="85" height="125"/>
