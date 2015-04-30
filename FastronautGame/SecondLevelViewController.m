@@ -74,6 +74,10 @@
         self.piranha.image = [UIImage imageNamed:@"seagull"]; 
     }
     
+    if (self.piranha.center.y > 200) {
+        self.piranha.image = [UIImage imageNamed:@"piranha"]; 
+    }
+    
     
 }
 
