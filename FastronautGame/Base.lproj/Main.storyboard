@@ -267,6 +267,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="NS5-JG-eWf" eventType="touchUpInside" id="MH3-tJ-Cmd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhF-bX-MvY">
                                 <rect key="frame" x="160" y="246" width="280" height="74"/>
@@ -278,6 +281,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="restartGame:" destination="NS5-JG-eWf" eventType="touchUpInside" id="MXC-Bs-Lqv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M49-xD-cau">
                                 <rect key="frame" x="109" y="468" width="383" height="63"/>
@@ -286,6 +292,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gWu-3A-wTY" kind="show" id="LQr-Sb-Evs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,6 +328,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8h-pA-8Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2275" y="286"/>
+        </scene>
+        <!--Fourth Level View Controller-->
+        <scene sceneID="IV7-0q-9yv">
+            <objects>
+                <viewController id="gWu-3A-wTY" customClass="FourthLevelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="buT-s0-WMU"/>
+                        <viewControllerLayoutGuide type="bottom" id="RAs-ti-h2W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jL1-iP-Y5w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nW7-A3-XcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2949" y="286"/>
         </scene>
     </scenes>
     <resources>
