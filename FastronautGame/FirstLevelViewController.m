@@ -18,10 +18,13 @@
     [super viewDidLoad];
     
     self.Exit.hidden = YES;
+    self.Exit.titleLabel.numberOfLines = 0;
     self.proceedButton.hidden = YES;
+    self.proceedButton.titleLabel.numberOfLines = 0;
     scoreNumber = 0;
     
 }
+
 
 -(IBAction)startGame:(id)sender {
     

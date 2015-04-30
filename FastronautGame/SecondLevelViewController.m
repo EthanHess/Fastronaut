@@ -19,6 +19,7 @@
     
     self.gameOver.hidden = YES;
     self.proceedButton.hidden = YES;
+    self.proceedButton.titleLabel.numberOfLines = 0; 
     scoreNumber = 0;
     
 }
@@ -124,7 +125,7 @@
     
     scoreNumber = scoreNumber + 1;
     
-    if (scoreNumber > 10) {
+    if (scoreNumber > 5) {
         [self.scubaTimer invalidate];
         [self.obstacleTimer invalidate];
         
@@ -137,6 +138,13 @@
     
 }
 
+- (IBAction)restartGame:(id)sender {
+    
+    self.startGame.hidden = NO;
+    self.gameOver.hidden = YES;
+    self.scubanaut.hidden = NO;
+    self.piranha.hidden = NO; 
+}
 
 
 - (void)didReceiveMemoryWarning {
