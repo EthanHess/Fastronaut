@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-int rocketFlight;
-
 @interface LaunchViewController : ViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *launchButton;

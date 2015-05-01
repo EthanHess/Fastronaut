@@ -19,7 +19,6 @@
     
     self.proceedButton.hidden = YES;
     self.fireBlast.hidden = YES;
-    rocketFlight = 0;
     
 }
 
@@ -33,9 +32,27 @@
 
 - (void)rocketUp {
     
-    self.rocketShip.center = CGPointMake(self.rocketShip.center.x, self.rocketShip.center.y + 1);
+    self.rocketShip.center = CGPointMake(self.rocketShip.center.x, self.rocketShip.center.y - 1);
     
+    if (self.rocketShip.center.y < 200) {
+        
+        self.fireBlast.hidden = NO;
+        self.fireBlast.center = CGPointMake(self.fireBlast.center.x, self.rocketShip.center.y - 1);
+
+    }
     
+    if (self.rocketShip.center.y < - 1000) {
+        
+        [self.rocketTimer invalidate];
+        
+        self.proceedButton.hidden = NO;
+    }
+    
+}
+
+- (void)placeFireBlast {
+    
+    self.fireBlast.center = CGPointMake(self.fireBlast.center.x, self.rocketShip.center.y + 250);
     
 }
 

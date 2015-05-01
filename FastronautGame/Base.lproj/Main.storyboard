@@ -593,17 +593,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BlastOffView" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-2W-L2y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlastOffView" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-2W-L2y">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="RocketShip" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-Ug-9gI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RocketShip" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-Ug-9gI">
                                 <rect key="frame" x="216" y="179" width="150" height="300"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="FireView" translatesAutoresizingMaskIntoConstraints="NO" id="8Qq-o2-wjT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FireView" translatesAutoresizingMaskIntoConstraints="NO" id="8Qq-o2-wjT">
                                 <rect key="frame" x="216" y="478" width="150" height="150"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB1-uv-ga0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB1-uv-ga0">
                                 <rect key="frame" x="189" y="78" width="204" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="L5C-VS-qIw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Launch!">
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
@@ -616,8 +619,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs0-dm-Zd1">
                                 <rect key="frame" x="192" y="249" width="198" height="102"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="EOa-Bx-Oii"/>
-                                    <constraint firstAttribute="width" constant="198" id="wY0-mA-d59"/>
+                                    <constraint firstAttribute="width" constant="198" id="l2f-QS-9EZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="Proceed!">
@@ -631,13 +633,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="iB1-uv-ga0" secondAttribute="centerX" id="4Qe-WI-Zgy"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="leading" secondItem="rQ5-Hg-k8A" secondAttribute="leading" constant="192" id="5rj-z4-Gr8"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="9MJ-Ug-9gI" secondAttribute="centerX" id="AuB-Cm-PFb"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="8Qq-o2-wjT" secondAttribute="centerX" id="UFv-7q-fcl"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerY" secondItem="D5V-2W-L2y" secondAttribute="centerY" id="fht-mC-tlO"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="top" secondItem="iB1-uv-ga0" secondAttribute="bottom" constant="78" id="ty9-bK-wkt"/>
-                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerY" secondItem="rQ5-Hg-k8A" secondAttribute="centerY" id="uuk-nI-Tg2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8Qq-o2-wjT" secondAttribute="bottom" constant="-28" id="AIV-uz-sAI"/>
+                            <constraint firstItem="D5V-2W-L2y" firstAttribute="leading" secondItem="rQ5-Hg-k8A" secondAttribute="leading" id="BHz-eV-25w"/>
+                            <constraint firstAttribute="trailing" secondItem="D5V-2W-L2y" secondAttribute="trailing" id="FIp-sb-vEW"/>
+                            <constraint firstItem="VCE-EP-t6a" firstAttribute="top" secondItem="9MJ-Ug-9gI" secondAttribute="bottom" constant="121" id="GxS-23-Ifx"/>
+                            <constraint firstItem="9MJ-Ug-9gI" firstAttribute="centerX" secondItem="xs0-dm-Zd1" secondAttribute="centerX" id="RW7-Ev-olF"/>
+                            <constraint firstItem="9MJ-Ug-9gI" firstAttribute="leading" secondItem="8Qq-o2-wjT" secondAttribute="leading" id="TCX-bH-yex"/>
+                            <constraint firstItem="iB1-uv-ga0" firstAttribute="centerX" secondItem="xs0-dm-Zd1" secondAttribute="centerX" id="U2m-bd-60k"/>
+                            <constraint firstItem="D5V-2W-L2y" firstAttribute="centerY" secondItem="xs0-dm-Zd1" secondAttribute="centerY" id="Yia-t3-BCC"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="top" secondItem="iB1-uv-ga0" secondAttribute="bottom" constant="78" id="Zto-du-yYm"/>
+                            <constraint firstItem="D5V-2W-L2y" firstAttribute="bottom" secondItem="VCE-EP-t6a" secondAttribute="top" id="bdG-Wr-NdI"/>
+                            <constraint firstItem="iB1-uv-ga0" firstAttribute="leading" secondItem="rQ5-Hg-k8A" secondAttribute="leading" constant="189" id="cBr-ny-bVt"/>
+                            <constraint firstItem="iB1-uv-ga0" firstAttribute="top" secondItem="d9e-vl-BmE" secondAttribute="bottom" constant="58" id="hcn-06-Dwb"/>
+                            <constraint firstItem="D5V-2W-L2y" firstAttribute="top" secondItem="rQ5-Hg-k8A" secondAttribute="top" id="muG-6P-ODU"/>
+                            <constraint firstItem="9MJ-Ug-9gI" firstAttribute="top" secondItem="iB1-uv-ga0" secondAttribute="bottom" constant="8" symbolic="YES" id="wSh-Bv-m9h"/>
                         </constraints>
                     </view>
                     <connections>
@@ -662,6 +671,11 @@
                     <view key="view" contentMode="scaleToFill" id="nks-HF-Gz2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LevelSix" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-fI-7Jt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -678,6 +692,7 @@
         <image name="FireView" width="150" height="150"/>
         <image name="LevelFive" width="335" height="550"/>
         <image name="LevelFour" width="335" height="550"/>
+        <image name="LevelSix" width="335" height="550"/>
         <image name="RocketShip" width="150" height="300"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>

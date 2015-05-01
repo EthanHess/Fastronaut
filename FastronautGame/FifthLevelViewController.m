@@ -101,10 +101,10 @@
         [self placeChemDrop];
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.chemDrop.frame)) {
-        [self gameEnded];
-    }
-        
+//    if (CGRectIntersectsRect(self.fastronaut.frame, self.chemDrop.frame)) {
+//        [self gameEnded];
+//    }
+    
 }
 
 - (void)placeChemBlob {
