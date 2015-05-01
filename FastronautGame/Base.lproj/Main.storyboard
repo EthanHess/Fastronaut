@@ -5,6 +5,22 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="GM4-Up-pDc">
+            <objects>
+                <navigationController id="A6s-sA-39q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGT-EK-wTf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="98c-pw-U99"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udg-9i-FgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="286"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -20,7 +36,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut Screen One" translatesAutoresizingMaskIntoConstraints="NO" id="W08-q5-lWP">
                                 <rect key="frame" x="-12" y="-14" width="624" height="628"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-Ox-znW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-Ox-znW">
                                 <rect key="frame" x="185" y="115" width="231" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="Lyg-nS-GZA"/>
@@ -63,6 +79,7 @@
                             <constraint firstItem="Wgf-Xb-W5Q" firstAttribute="top" secondItem="LoQ-Ox-znW" secondAttribute="bottom" constant="28" id="svL-Zu-j65"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dmH-Hq-xz9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -428,6 +445,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sPM-wp-OyE" kind="show" id="Jqi-gZ-OJT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -461,11 +481,41 @@
             </objects>
             <point key="canvasLocation" x="2949" y="286"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Mtl-2P-Aav">
+            <objects>
+                <viewController id="sPM-wp-OyE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5aS-yi-upe"/>
+                        <viewControllerLayoutGuide type="bottom" id="j6k-QE-QM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHm-u6-FHU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LevelFive" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-3I-pT2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="bottom" secondItem="j6k-QE-QM5" secondAttribute="top" id="Swv-cl-4G1"/>
+                            <constraint firstAttribute="trailing" secondItem="MaW-3I-pT2" secondAttribute="trailing" id="cgL-f6-rt4"/>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="top" secondItem="tHm-u6-FHU" secondAttribute="top" id="h3W-tn-fK8"/>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leading" id="v6y-K2-kSd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYP-oE-JvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="286"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Arrow" width="125" height="60"/>
         <image name="CityLevelDay" width="335" height="550"/>
         <image name="Fastronaut Screen One" width="335" height="550"/>
+        <image name="LevelFive" width="335" height="550"/>
         <image name="LevelFour" width="335" height="550"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
@@ -476,4 +526,7 @@
         <image name="piranha" width="85" height="70"/>
         <image name="swimUp" width="85" height="125"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="98c-pw-U99"/>
+    </inferredMetricsTieBreakers>
 </document>

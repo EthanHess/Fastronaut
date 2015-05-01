@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoundController.h"
 
 int astroFlight;
 int randomTopBulletPosition;
@@ -21,6 +22,7 @@ int scoreNumber;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 @property (nonatomic, strong) NSTimer *astronautTimer;
 @property (nonatomic, strong) NSTimer *bulletTimer;
+@property (nonatomic, strong) SoundController *soundController;
 
 -(IBAction)startGame:(id)sender;
 -(void)astronautMoving;

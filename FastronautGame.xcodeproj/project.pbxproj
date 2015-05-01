@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		276EA5FF1AF2BBDC00598EB1 /* FourthLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EA5FE1AF2BBDC00598EB1 /* FourthLevelViewController.m */; };
 		276EA6021AF2E0BB00598EB1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EA6011AF2E0BB00598EB1 /* TableViewController.m */; };
+		276EA6051AF2ECB100598EB1 /* SoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EA6041AF2ECB100598EB1 /* SoundController.m */; };
+		276EA6081AF2FBD600598EB1 /* FifthLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EA6071AF2FBD600598EB1 /* FifthLevelViewController.m */; };
 		27CAC7131AE0B944007B67C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7121AE0B944007B67C4 /* main.m */; };
 		27CAC7161AE0B944007B67C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7151AE0B944007B67C4 /* AppDelegate.m */; };
 		27CAC7191AE0B944007B67C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7181AE0B944007B67C4 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 		276EA5FE1AF2BBDC00598EB1 /* FourthLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthLevelViewController.m; sourceTree = "<group>"; };
 		276EA6001AF2E0BB00598EB1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		276EA6011AF2E0BB00598EB1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		276EA6031AF2ECB100598EB1 /* SoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundController.h; sourceTree = "<group>"; };
+		276EA6041AF2ECB100598EB1 /* SoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundController.m; sourceTree = "<group>"; };
+		276EA6061AF2FBD600598EB1 /* FifthLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthLevelViewController.h; sourceTree = "<group>"; };
+		276EA6071AF2FBD600598EB1 /* FifthLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthLevelViewController.m; sourceTree = "<group>"; };
 		27CAC70D1AE0B944007B67C4 /* FastronautGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastronautGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CAC7111AE0B944007B67C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CAC7121AE0B944007B67C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 				276EA6011AF2E0BB00598EB1 /* TableViewController.m */,
 				27CAC71A1AE0B944007B67C4 /* Main.storyboard */,
 				276EA5F81AF1AA7E00598EB1 /* Sound Controller */,
+				276EA6031AF2ECB100598EB1 /* SoundController.h */,
+				276EA6041AF2ECB100598EB1 /* SoundController.m */,
 				27CDDBB51AE7FDFE0073AA27 /* Levels */,
 				27CAC7461AE24F06007B67C4 /* FirstLevelViewController.h */,
 				27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */,
@@ -120,6 +128,8 @@
 				27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */,
 				276EA5FD1AF2BBDC00598EB1 /* FourthLevelViewController.h */,
 				276EA5FE1AF2BBDC00598EB1 /* FourthLevelViewController.m */,
+				276EA6061AF2FBD600598EB1 /* FifthLevelViewController.h */,
+				276EA6071AF2FBD600598EB1 /* FifthLevelViewController.m */,
 				27CAC71D1AE0B944007B67C4 /* Images.xcassets */,
 				27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */,
 				27CAC7101AE0B944007B67C4 /* Supporting Files */,
@@ -264,8 +274,10 @@
 				27CAC7481AE24F06007B67C4 /* FirstLevelViewController.m in Sources */,
 				27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */,
 				27CAC7191AE0B944007B67C4 /* ViewController.m in Sources */,
+				276EA6081AF2FBD600598EB1 /* FifthLevelViewController.m in Sources */,
 				27CAC7161AE0B944007B67C4 /* AppDelegate.m in Sources */,
 				276EA5FF1AF2BBDC00598EB1 /* FourthLevelViewController.m in Sources */,
+				276EA6051AF2ECB100598EB1 /* SoundController.m in Sources */,
 				27CAC7131AE0B944007B67C4 /* main.m in Sources */,
 				27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */,
 				276EA6021AF2E0BB00598EB1 /* TableViewController.m in Sources */,

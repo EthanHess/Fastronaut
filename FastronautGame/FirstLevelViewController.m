@@ -131,6 +131,15 @@
     
 }
 
+- (void)play {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"" withExtension:@""];
+    
+    [self.soundController playAudioFileAtURL:url];
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {
