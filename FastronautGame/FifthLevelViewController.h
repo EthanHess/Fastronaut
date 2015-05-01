@@ -8,6 +8,21 @@
 
 #import "ViewController.h"
 
+int scoreNumber;
+int astroFlight;
+int chemPostition;
+
 @interface FifthLevelViewController : ViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *startGame;
+@property (weak, nonatomic) IBOutlet UIButton *tryAgain;
+@property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UIImageView *chemBlob;
+@property (weak, nonatomic) IBOutlet UIImageView *chemDrop;
+@property (nonatomic, strong) NSTimer *fastroTimer;
+@property (nonatomic, strong) NSTimer *chemTimer;
+@property (nonatomic, strong) NSTimer *chemTimerTwo;
+
 
 @end

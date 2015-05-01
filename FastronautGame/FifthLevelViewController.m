@@ -16,8 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
 }
+
+- (IBAction)startGame:(id)sender {
+    
+    
+}
+
+
+- (IBAction)resetGame:(id)sender {
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

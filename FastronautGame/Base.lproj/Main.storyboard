@@ -121,7 +121,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastronautAstronaut" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-vI-zke">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-7w-atU">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-7w-atU">
                                 <rect key="frame" x="201" y="81" width="199" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="jv9-mc-iDJ"/>
@@ -209,13 +209,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceGameLevelThree" translatesAutoresizingMaskIntoConstraints="NO" id="3lR-qI-fG0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swimUp" translatesAutoresizingMaskIntoConstraints="NO" id="0jg-c3-MJy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="swimUp" translatesAutoresizingMaskIntoConstraints="NO" id="0jg-c3-MJy">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piranha" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-8A-1Kn">
                                 <rect key="frame" x="365" y="242" width="85" height="70"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-Cf-gQS">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-Cf-gQS">
                                 <rect key="frame" x="203" y="72" width="194" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="RTX-IM-hcl"/>
@@ -230,7 +230,7 @@
                                     <action selector="startGame:" destination="zMr-Z9-x8x" eventType="touchUpInside" id="8rw-ou-LKS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-Mw-cmj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-Mw-cmj">
                                 <rect key="frame" x="175" y="237" width="250" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="uNq-gy-E5E"/>
@@ -244,7 +244,7 @@
                                     <action selector="restartGame:" destination="zMr-Z9-x8x" eventType="touchUpInside" id="6gi-kX-t4B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-Ao-odW">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-Ao-odW">
                                 <rect key="frame" x="107" y="441" width="387" height="103"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="Well done! Proceed">
@@ -305,10 +305,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityUp" translatesAutoresizingMaskIntoConstraints="NO" id="98m-6J-WcH">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityCopter" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-fG-Pn0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cityCopter" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-fG-Pn0">
                                 <rect key="frame" x="471" y="215" width="120" height="90"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-6A-L8d">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-6A-L8d">
                                 <rect key="frame" x="174" y="92" width="252" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Mz-F6-Az1"/>
@@ -405,7 +405,7 @@
                                     <constraint firstAttribute="height" constant="58" id="9O3-KG-Zw4"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKr-4i-WmC">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKr-4i-WmC">
                                 <rect key="frame" x="181" y="82" width="239" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="AVf-fy-68R"/>
@@ -481,10 +481,10 @@
             </objects>
             <point key="canvasLocation" x="2949" y="286"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifth Level View Controller-->
         <scene sceneID="Mtl-2P-Aav">
             <objects>
-                <viewController id="sPM-wp-OyE" sceneMemberID="viewController">
+                <viewController id="sPM-wp-OyE" customClass="FifthLevelViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5aS-yi-upe"/>
                         <viewControllerLayoutGuide type="bottom" id="j6k-QE-QM5"/>
@@ -496,15 +496,84 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LevelFive" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-3I-pT2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioactiveUp" translatesAutoresizingMaskIntoConstraints="NO" id="usf-fR-5El">
+                                <rect key="frame" x="258" y="237" width="85" height="125"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-XT-5bW">
+                                <rect key="frame" x="408" y="82" width="160" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicalDrop" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-8Q-iB0">
+                                <rect key="frame" x="32" y="480" width="60" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-3e-dGd">
+                                <rect key="frame" x="181" y="82" width="239" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="Grd-I1-uFc"/>
+                                    <constraint firstAttribute="height" constant="56" id="heg-8S-AFe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin! ">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="sPM-wp-OyE" eventType="touchUpInside" id="hJQ-rb-w4D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-hi-CMT">
+                                <rect key="frame" x="170" y="269" width="260" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="UP4-8e-GOt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="sPM-wp-OyE" eventType="touchUpInside" id="0jV-to-khb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-yp-BDJ">
+                                <rect key="frame" x="110" y="437" width="381" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MaW-3I-pT2" firstAttribute="bottom" secondItem="j6k-QE-QM5" secondAttribute="top" id="Swv-cl-4G1"/>
-                            <constraint firstAttribute="trailing" secondItem="MaW-3I-pT2" secondAttribute="trailing" id="cgL-f6-rt4"/>
-                            <constraint firstItem="MaW-3I-pT2" firstAttribute="top" secondItem="tHm-u6-FHU" secondAttribute="top" id="h3W-tn-fK8"/>
-                            <constraint firstItem="MaW-3I-pT2" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leading" id="v6y-K2-kSd"/>
+                            <constraint firstItem="XAD-XT-5bW" firstAttribute="top" secondItem="uH2-3e-dGd" secondAttribute="top" id="4lP-l4-MoP"/>
+                            <constraint firstItem="usf-fR-5El" firstAttribute="top" secondItem="uH2-3e-dGd" secondAttribute="bottom" constant="99" id="6UG-xL-RZX"/>
+                            <constraint firstAttribute="trailing" secondItem="MaW-3I-pT2" secondAttribute="trailing" id="FVn-K4-bmh"/>
+                            <constraint firstItem="gLI-hi-CMT" firstAttribute="top" secondItem="XAD-XT-5bW" secondAttribute="bottom" constant="67" id="LSb-gJ-XLx"/>
+                            <constraint firstItem="3hJ-yp-BDJ" firstAttribute="top" secondItem="usf-fR-5El" secondAttribute="bottom" constant="75" id="MJv-1x-52d"/>
+                            <constraint firstItem="gLI-hi-CMT" firstAttribute="centerX" secondItem="3hJ-yp-BDJ" secondAttribute="centerX" id="Oke-T2-JV0"/>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="bottom" secondItem="j6k-QE-QM5" secondAttribute="top" id="PwT-eX-WPf"/>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leading" id="QVF-3B-qe0"/>
+                            <constraint firstItem="iYf-8Q-iB0" firstAttribute="bottom" secondItem="3hJ-yp-BDJ" secondAttribute="bottom" id="U2L-R9-hBX"/>
+                            <constraint firstItem="uH2-3e-dGd" firstAttribute="top" secondItem="5aS-yi-upe" secondAttribute="bottom" constant="62" id="V9G-mA-RVt"/>
+                            <constraint firstItem="MaW-3I-pT2" firstAttribute="top" secondItem="tHm-u6-FHU" secondAttribute="top" id="b9c-mi-lsf"/>
+                            <constraint firstItem="iYf-8Q-iB0" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leadingMargin" constant="16" id="bBL-k0-msH"/>
+                            <constraint firstItem="3hJ-yp-BDJ" firstAttribute="leading" secondItem="iYf-8Q-iB0" secondAttribute="trailing" constant="18" id="bep-25-RAM"/>
+                            <constraint firstItem="usf-fR-5El" firstAttribute="centerX" secondItem="gLI-hi-CMT" secondAttribute="centerX" id="gdu-GP-JLn"/>
+                            <constraint firstItem="gLI-hi-CMT" firstAttribute="centerX" secondItem="MaW-3I-pT2" secondAttribute="centerX" id="osj-vb-TeG"/>
+                            <constraint firstItem="uH2-3e-dGd" firstAttribute="centerX" secondItem="gLI-hi-CMT" secondAttribute="centerX" id="wcz-9I-gTU"/>
+                            <constraint firstItem="usf-fR-5El" firstAttribute="centerY" secondItem="gLI-hi-CMT" secondAttribute="centerY" id="x91-W5-Iz4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XAD-XT-5bW" secondAttribute="trailing" constant="16" id="xwc-8K-q6P"/>
+                            <constraint firstItem="j6k-QE-QM5" firstAttribute="top" secondItem="iYf-8Q-iB0" secondAttribute="bottom" constant="70" id="zEs-jm-3is"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chemBlob" destination="XAD-XT-5bW" id="c22-5E-3lD"/>
+                        <outlet property="chemDrop" destination="iYf-8Q-iB0" id="TTp-Up-9Z5"/>
+                        <outlet property="fastronaut" destination="usf-fR-5El" id="rGs-hL-kFL"/>
+                        <outlet property="proceedButton" destination="3hJ-yp-BDJ" id="mHU-d0-7kc"/>
+                        <outlet property="startGame" destination="uH2-3e-dGd" id="cbp-pJ-EJE"/>
+                        <outlet property="tryAgain" destination="gLI-hi-CMT" id="Phn-RR-Tlo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYP-oE-JvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,14 +588,17 @@
         <image name="LevelFour" width="335" height="550"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
+        <image name="chemicalDrop" width="60" height="50"/>
+        <image name="chemicals" width="160" height="120"/>
         <image name="cityCopter" width="120" height="90"/>
         <image name="cityUp" width="85" height="125"/>
         <image name="fastronautAstronaut" width="85" height="125"/>
         <image name="iceDagger" width="130" height="60"/>
         <image name="piranha" width="85" height="70"/>
+        <image name="radioactiveUp" width="85" height="125"/>
         <image name="swimUp" width="85" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="98c-pw-U99"/>
+        <segue reference="xHq-rm-V2p"/>
     </inferredMetricsTieBreakers>
 </document>
