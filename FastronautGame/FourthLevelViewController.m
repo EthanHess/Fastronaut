@@ -59,7 +59,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    astroFlight = 40;
+    astroFlight = 30;
     
 }
 
@@ -105,7 +105,7 @@
     
     scoreNumber = scoreNumber + 1;
     
-    if (scoreNumber > 3) {
+    if (scoreNumber > 1) {
         [self.fastroTimer invalidate];
         [self.daggerTimer invalidate];
         

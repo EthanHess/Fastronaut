@@ -12,6 +12,7 @@
 #import "SecondLevelViewController.h"
 #import "ThirdLevelViewController.h"
 #import "FourthLevelViewController.h"
+#import "FifthLevelViewController.h"
 
 @interface TableViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -108,6 +109,14 @@
             
             break; }
             
+        case 5: {
+            
+            FifthLevelViewController *fifthLevel = [FifthLevelViewController new];
+            
+            [self.navigationController pushViewController:fifthLevel animated:YES];
+            
+            break; }
+            
         default:
             break;
     }
@@ -116,7 +125,7 @@
 
 - (NSArray *)levels {
     
-    return @[@"Back to main page", @"Level One", @"Level Two", @"Level Three", @"Level Four"];
+    return @[@"Back to main page", @"Level One", @"Level Two", @"Level Three", @"Level Four", @"Level Five", @"Blast off"];
 }
 
 

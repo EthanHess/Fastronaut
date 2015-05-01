@@ -36,7 +36,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut Screen One" translatesAutoresizingMaskIntoConstraints="NO" id="W08-q5-lWP">
                                 <rect key="frame" x="-12" y="-14" width="624" height="628"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-Ox-znW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-Ox-znW">
                                 <rect key="frame" x="185" y="115" width="231" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="Lyg-nS-GZA"/>
@@ -51,9 +51,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-Xb-W5Q">
-                                <rect key="frame" x="232" y="190" width="136" height="53"/>
+                                <rect key="frame" x="232" y="170" width="136" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="m7w-cE-1Fx"/>
+                                    <constraint firstAttribute="width" constant="136" id="eHh-WD-msx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Levels">
@@ -67,16 +67,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wgf-Xb-W5Q" secondAttribute="bottom" constant="357" id="0Hj-1n-j3Q"/>
+                            <constraint firstItem="Wgf-Xb-W5Q" firstAttribute="centerX" secondItem="LoQ-Ox-znW" secondAttribute="centerX" id="5t6-Gs-ojp"/>
                             <constraint firstItem="W08-q5-lWP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-28" id="6e9-6F-jfx"/>
                             <constraint firstItem="W08-q5-lWP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-14" id="7ec-FI-l4V"/>
                             <constraint firstItem="W08-q5-lWP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9n7-Hl-xpp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wgf-Xb-W5Q" secondAttribute="bottom" constant="377" id="DsN-1M-DBo"/>
                             <constraint firstItem="LoQ-Ox-znW" firstAttribute="centerX" secondItem="W08-q5-lWP" secondAttribute="centerX" id="IIA-QV-Nru"/>
                             <constraint firstItem="W08-q5-lWP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aew-nO-P9P"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LoQ-Ox-znW" secondAttribute="bottom" constant="438" id="gFG-Vd-p8g"/>
+                            <constraint firstItem="Wgf-Xb-W5Q" firstAttribute="top" secondItem="LoQ-Ox-znW" secondAttribute="bottom" constant="8" symbolic="YES" id="khl-jk-24A"/>
                             <constraint firstItem="LoQ-Ox-znW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="95" id="lpu-MR-IQI"/>
-                            <constraint firstItem="Wgf-Xb-W5Q" firstAttribute="centerX" secondItem="LoQ-Ox-znW" secondAttribute="centerX" id="pIt-On-Kyj"/>
-                            <constraint firstItem="Wgf-Xb-W5Q" firstAttribute="top" secondItem="LoQ-Ox-znW" secondAttribute="bottom" constant="28" id="svL-Zu-j65"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dmH-Hq-xz9"/>
@@ -121,7 +121,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastronautAstronaut" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-vI-zke">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-7w-atU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-7w-atU">
                                 <rect key="frame" x="201" y="81" width="199" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="jv9-mc-iDJ"/>
@@ -209,13 +209,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceGameLevelThree" translatesAutoresizingMaskIntoConstraints="NO" id="3lR-qI-fG0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="swimUp" translatesAutoresizingMaskIntoConstraints="NO" id="0jg-c3-MJy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swimUp" translatesAutoresizingMaskIntoConstraints="NO" id="0jg-c3-MJy">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piranha" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-8A-1Kn">
                                 <rect key="frame" x="365" y="242" width="85" height="70"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-Cf-gQS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-Cf-gQS">
                                 <rect key="frame" x="203" y="72" width="194" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="RTX-IM-hcl"/>
@@ -230,7 +230,7 @@
                                     <action selector="startGame:" destination="zMr-Z9-x8x" eventType="touchUpInside" id="8rw-ou-LKS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-Mw-cmj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-Mw-cmj">
                                 <rect key="frame" x="175" y="237" width="250" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="uNq-gy-E5E"/>
@@ -244,7 +244,7 @@
                                     <action selector="restartGame:" destination="zMr-Z9-x8x" eventType="touchUpInside" id="6gi-kX-t4B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-Ao-odW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-Ao-odW">
                                 <rect key="frame" x="107" y="441" width="387" height="103"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="Well done! Proceed">
@@ -305,10 +305,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityUp" translatesAutoresizingMaskIntoConstraints="NO" id="98m-6J-WcH">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cityCopter" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-fG-Pn0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityCopter" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-fG-Pn0">
                                 <rect key="frame" x="471" y="215" width="120" height="90"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-6A-L8d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-6A-L8d">
                                 <rect key="frame" x="174" y="92" width="252" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Mz-F6-Az1"/>
@@ -405,7 +405,7 @@
                                     <constraint firstAttribute="height" constant="58" id="9O3-KG-Zw4"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKr-4i-WmC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKr-4i-WmC">
                                 <rect key="frame" x="181" y="82" width="239" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="AVf-fy-68R"/>
@@ -502,9 +502,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-XT-5bW">
                                 <rect key="frame" x="408" y="82" width="160" height="120"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicalDrop" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-8Q-iB0">
-                                <rect key="frame" x="32" y="480" width="60" height="50"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-3e-dGd">
                                 <rect key="frame" x="181" y="82" width="239" height="56"/>
                                 <constraints>
@@ -534,14 +531,20 @@
                                     <action selector="resetGame:" destination="sPM-wp-OyE" eventType="touchUpInside" id="0jV-to-khb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-yp-BDJ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-yp-BDJ">
                                 <rect key="frame" x="110" y="437" width="381" height="93"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="Well done! Proceed">
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="1s7-xS-B21" kind="show" id="qD0-lf-IDb"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicalDrop" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-gz-tiG">
+                                <rect key="frame" x="24" y="473" width="60" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -551,24 +554,23 @@
                             <constraint firstItem="gLI-hi-CMT" firstAttribute="top" secondItem="XAD-XT-5bW" secondAttribute="bottom" constant="67" id="LSb-gJ-XLx"/>
                             <constraint firstItem="3hJ-yp-BDJ" firstAttribute="top" secondItem="usf-fR-5El" secondAttribute="bottom" constant="75" id="MJv-1x-52d"/>
                             <constraint firstItem="gLI-hi-CMT" firstAttribute="centerX" secondItem="3hJ-yp-BDJ" secondAttribute="centerX" id="Oke-T2-JV0"/>
+                            <constraint firstItem="3hJ-yp-BDJ" firstAttribute="leading" secondItem="oj2-gz-tiG" secondAttribute="trailing" constant="26" id="Oxv-r9-fo2"/>
+                            <constraint firstItem="oj2-gz-tiG" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leadingMargin" constant="8" id="PjR-zo-N46"/>
                             <constraint firstItem="MaW-3I-pT2" firstAttribute="bottom" secondItem="j6k-QE-QM5" secondAttribute="top" id="PwT-eX-WPf"/>
                             <constraint firstItem="MaW-3I-pT2" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leading" id="QVF-3B-qe0"/>
-                            <constraint firstItem="iYf-8Q-iB0" firstAttribute="bottom" secondItem="3hJ-yp-BDJ" secondAttribute="bottom" id="U2L-R9-hBX"/>
                             <constraint firstItem="uH2-3e-dGd" firstAttribute="top" secondItem="5aS-yi-upe" secondAttribute="bottom" constant="62" id="V9G-mA-RVt"/>
                             <constraint firstItem="MaW-3I-pT2" firstAttribute="top" secondItem="tHm-u6-FHU" secondAttribute="top" id="b9c-mi-lsf"/>
-                            <constraint firstItem="iYf-8Q-iB0" firstAttribute="leading" secondItem="tHm-u6-FHU" secondAttribute="leadingMargin" constant="16" id="bBL-k0-msH"/>
-                            <constraint firstItem="3hJ-yp-BDJ" firstAttribute="leading" secondItem="iYf-8Q-iB0" secondAttribute="trailing" constant="18" id="bep-25-RAM"/>
+                            <constraint firstItem="j6k-QE-QM5" firstAttribute="top" secondItem="oj2-gz-tiG" secondAttribute="bottom" constant="77" id="ela-t2-dF4"/>
                             <constraint firstItem="usf-fR-5El" firstAttribute="centerX" secondItem="gLI-hi-CMT" secondAttribute="centerX" id="gdu-GP-JLn"/>
                             <constraint firstItem="gLI-hi-CMT" firstAttribute="centerX" secondItem="MaW-3I-pT2" secondAttribute="centerX" id="osj-vb-TeG"/>
                             <constraint firstItem="uH2-3e-dGd" firstAttribute="centerX" secondItem="gLI-hi-CMT" secondAttribute="centerX" id="wcz-9I-gTU"/>
                             <constraint firstItem="usf-fR-5El" firstAttribute="centerY" secondItem="gLI-hi-CMT" secondAttribute="centerY" id="x91-W5-Iz4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XAD-XT-5bW" secondAttribute="trailing" constant="16" id="xwc-8K-q6P"/>
-                            <constraint firstItem="j6k-QE-QM5" firstAttribute="top" secondItem="iYf-8Q-iB0" secondAttribute="bottom" constant="70" id="zEs-jm-3is"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chemBlob" destination="XAD-XT-5bW" id="c22-5E-3lD"/>
-                        <outlet property="chemDrop" destination="iYf-8Q-iB0" id="TTp-Up-9Z5"/>
+                        <outlet property="chemDrop" destination="oj2-gz-tiG" id="O38-6C-OzM"/>
                         <outlet property="fastronaut" destination="usf-fR-5El" id="rGs-hL-kFL"/>
                         <outlet property="proceedButton" destination="3hJ-yp-BDJ" id="mHU-d0-7kc"/>
                         <outlet property="startGame" destination="uH2-3e-dGd" id="cbp-pJ-EJE"/>
@@ -579,13 +581,104 @@
             </objects>
             <point key="canvasLocation" x="3580" y="286"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="VZ5-SB-b25">
+            <objects>
+                <viewController id="1s7-xS-B21" customClass="LaunchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d9e-vl-BmE"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCE-EP-t6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rQ5-Hg-k8A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BlastOffView" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-2W-L2y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="RocketShip" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-Ug-9gI">
+                                <rect key="frame" x="216" y="179" width="150" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="FireView" translatesAutoresizingMaskIntoConstraints="NO" id="8Qq-o2-wjT">
+                                <rect key="frame" x="216" y="478" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB1-uv-ga0">
+                                <rect key="frame" x="189" y="78" width="204" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Launch!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchRocket:" destination="1s7-xS-B21" eventType="touchUpInside" id="nfj-A4-rjX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs0-dm-Zd1">
+                                <rect key="frame" x="192" y="249" width="198" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="EOa-Bx-Oii"/>
+                                    <constraint firstAttribute="width" constant="198" id="wY0-mA-d59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Proceed!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Yy-PU-tTy" kind="show" id="HdR-eM-djh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="iB1-uv-ga0" secondAttribute="centerX" id="4Qe-WI-Zgy"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="leading" secondItem="rQ5-Hg-k8A" secondAttribute="leading" constant="192" id="5rj-z4-Gr8"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="9MJ-Ug-9gI" secondAttribute="centerX" id="AuB-Cm-PFb"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerX" secondItem="8Qq-o2-wjT" secondAttribute="centerX" id="UFv-7q-fcl"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerY" secondItem="D5V-2W-L2y" secondAttribute="centerY" id="fht-mC-tlO"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="top" secondItem="iB1-uv-ga0" secondAttribute="bottom" constant="78" id="ty9-bK-wkt"/>
+                            <constraint firstItem="xs0-dm-Zd1" firstAttribute="centerY" secondItem="rQ5-Hg-k8A" secondAttribute="centerY" id="uuk-nI-Tg2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fireBlast" destination="8Qq-o2-wjT" id="TyQ-e4-NDS"/>
+                        <outlet property="launchButton" destination="iB1-uv-ga0" id="qmz-Mt-4d8"/>
+                        <outlet property="proceedButton" destination="xs0-dm-Zd1" id="xXc-cg-BNQ"/>
+                        <outlet property="rocketShip" destination="9MJ-Ug-9gI" id="J2y-R4-u7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKf-As-XPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4218" y="286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="foP-Zf-aYQ">
+            <objects>
+                <viewController id="9Yy-PU-tTy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="upD-s0-V2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="nuO-Fp-exm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nks-HF-Gz2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ody-oj-9er" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4869" y="286"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Arrow" width="125" height="60"/>
+        <image name="BlastOffView" width="335" height="550"/>
         <image name="CityLevelDay" width="335" height="550"/>
         <image name="Fastronaut Screen One" width="335" height="550"/>
+        <image name="FireView" width="150" height="150"/>
         <image name="LevelFive" width="335" height="550"/>
         <image name="LevelFour" width="335" height="550"/>
+        <image name="RocketShip" width="150" height="300"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
         <image name="chemicalDrop" width="60" height="50"/>

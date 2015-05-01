@@ -21,6 +21,7 @@
 		27CAC7481AE24F06007B67C4 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */; };
 		27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */; };
 		27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */; };
+		27D423231AF4239F0099F224 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423221AF4239F0099F224 /* LaunchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
 		27CDDBEB1AE84B3E0073AA27 /* ThirdLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdLevelViewController.h; sourceTree = "<group>"; };
 		27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdLevelViewController.m; sourceTree = "<group>"; };
+		27D423211AF4239F0099F224 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		27D423221AF4239F0099F224 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				276EA5FE1AF2BBDC00598EB1 /* FourthLevelViewController.m */,
 				276EA6061AF2FBD600598EB1 /* FifthLevelViewController.h */,
 				276EA6071AF2FBD600598EB1 /* FifthLevelViewController.m */,
+				27D423211AF4239F0099F224 /* LaunchViewController.h */,
+				27D423221AF4239F0099F224 /* LaunchViewController.m */,
 				27CAC71D1AE0B944007B67C4 /* Images.xcassets */,
 				27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */,
 				27CAC7101AE0B944007B67C4 /* Supporting Files */,
@@ -281,6 +286,7 @@
 				27CAC7131AE0B944007B67C4 /* main.m in Sources */,
 				27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */,
 				276EA6021AF2E0BB00598EB1 /* TableViewController.m in Sources */,
+				27D423231AF4239F0099F224 /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
