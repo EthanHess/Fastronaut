@@ -675,6 +675,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LevelSix" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-fI-7Jt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spaceGuyUp" translatesAutoresizingMaskIntoConstraints="NO" id="3Vq-b0-vnK">
+                                <rect key="frame" x="258" y="237" width="85" height="125"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-Pp-0PF">
+                                <rect key="frame" x="369" y="115" width="200" height="110"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -704,6 +710,8 @@
         <image name="iceDagger" width="130" height="60"/>
         <image name="piranha" width="85" height="70"/>
         <image name="radioactiveUp" width="85" height="125"/>
+        <image name="satellite" width="225" height="110"/>
+        <image name="spaceGuyUp" width="85" height="125"/>
         <image name="swimUp" width="85" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
