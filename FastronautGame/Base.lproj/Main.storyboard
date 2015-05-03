@@ -660,10 +660,10 @@
             </objects>
             <point key="canvasLocation" x="4218" y="286"/>
         </scene>
-        <!--View Controller-->
+        <!--Sixth Level View Controller-->
         <scene sceneID="foP-Zf-aYQ">
             <objects>
-                <viewController id="9Yy-PU-tTy" sceneMemberID="viewController">
+                <viewController id="9Yy-PU-tTy" customClass="SixthLevelViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="upD-s0-V2d"/>
                         <viewControllerLayoutGuide type="bottom" id="nuO-Fp-exm"/>
@@ -672,18 +672,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LevelSix" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-fI-7Jt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LevelSix" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-fI-7Jt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spaceGuyUp" translatesAutoresizingMaskIntoConstraints="NO" id="3Vq-b0-vnK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceGuyUp" translatesAutoresizingMaskIntoConstraints="NO" id="3Vq-b0-vnK">
                                 <rect key="frame" x="258" y="237" width="85" height="125"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-Pp-0PF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-Pp-0PF">
                                 <rect key="frame" x="369" y="115" width="200" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XkX-oC-7ma"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-ks-kqd">
+                                <rect key="frame" x="198" y="104" width="204" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="acm-eP-5zf"/>
+                                    <constraint firstAttribute="height" constant="40" id="aeI-on-d83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="9Yy-PU-tTy" eventType="touchUpInside" id="qcE-ib-dgp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiT-or-jki">
+                                <rect key="frame" x="193" y="274" width="214" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="yrb-Qt-48Y"/>
+                                    <constraint firstAttribute="width" constant="214" id="zPt-lS-WFi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Try Again!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="9Yy-PU-tTy" eventType="touchUpInside" id="sC4-2H-QGM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7l-GG-t6w">
+                                <rect key="frame" x="113" y="435" width="374" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iWd-fI-7Jt" firstAttribute="bottom" secondItem="nuO-Fp-exm" secondAttribute="top" id="4c3-kd-Qrl"/>
+                            <constraint firstItem="YiT-or-jki" firstAttribute="top" secondItem="3Cp-Pp-0PF" secondAttribute="bottom" constant="49" id="5OQ-Yp-B13"/>
+                            <constraint firstItem="nuO-Fp-exm" firstAttribute="top" secondItem="f7l-GG-t6w" secondAttribute="bottom" constant="74" id="Amq-4I-hcS"/>
+                            <constraint firstItem="f7l-GG-t6w" firstAttribute="leading" secondItem="nks-HF-Gz2" secondAttribute="leadingMargin" constant="97" id="BUk-nc-hPp"/>
+                            <constraint firstAttribute="trailing" secondItem="iWd-fI-7Jt" secondAttribute="trailing" id="O3L-Ka-19T"/>
+                            <constraint firstItem="YiT-or-jki" firstAttribute="centerX" secondItem="JBU-ks-kqd" secondAttribute="centerX" id="TW6-cB-fBZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Cp-Pp-0PF" secondAttribute="trailing" constant="15" id="Vk9-Cx-DvA"/>
+                            <constraint firstItem="YiT-or-jki" firstAttribute="centerX" secondItem="3Vq-b0-vnK" secondAttribute="centerX" id="WkK-o9-7Hb"/>
+                            <constraint firstItem="JBU-ks-kqd" firstAttribute="top" secondItem="upD-s0-V2d" secondAttribute="bottom" constant="84" id="gqF-LP-zTd"/>
+                            <constraint firstItem="iWd-fI-7Jt" firstAttribute="top" secondItem="nks-HF-Gz2" secondAttribute="top" id="hBn-11-kWN"/>
+                            <constraint firstItem="f7l-GG-t6w" firstAttribute="top" secondItem="3Vq-b0-vnK" secondAttribute="bottom" constant="73" id="lDf-tG-aJy"/>
+                            <constraint firstItem="YiT-or-jki" firstAttribute="centerX" secondItem="f7l-GG-t6w" secondAttribute="centerX" id="mTU-WW-wha"/>
+                            <constraint firstItem="iWd-fI-7Jt" firstAttribute="centerY" secondItem="YiT-or-jki" secondAttribute="centerY" id="oMH-zi-hZH"/>
+                            <constraint firstItem="3Vq-b0-vnK" firstAttribute="centerX" secondItem="iWd-fI-7Jt" secondAttribute="centerX" id="pLx-Qt-wQE"/>
+                            <constraint firstItem="3Vq-b0-vnK" firstAttribute="top" secondItem="JBU-ks-kqd" secondAttribute="bottom" constant="93" id="sHQ-8f-gOJ"/>
+                            <constraint firstItem="iWd-fI-7Jt" firstAttribute="leading" secondItem="nks-HF-Gz2" secondAttribute="leading" id="uT0-F7-Fy2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fastronaut" destination="3Vq-b0-vnK" id="mJL-Ov-kbf"/>
+                        <outlet property="proceedButton" destination="f7l-GG-t6w" id="7HN-eM-75E"/>
+                        <outlet property="satellite" destination="3Cp-Pp-0PF" id="qEk-gW-ppw"/>
+                        <outlet property="startGame" destination="JBU-ks-kqd" id="4wf-3a-6PL"/>
+                        <outlet property="tryAgain" destination="YiT-or-jki" id="hs7-Df-YrF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ody-oj-9er" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
