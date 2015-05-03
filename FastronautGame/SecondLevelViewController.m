@@ -143,7 +143,9 @@
     self.startGame.hidden = NO;
     self.gameOver.hidden = YES;
     self.scubanaut.hidden = NO;
-    self.piranha.hidden = NO; 
+    self.piranha.hidden = NO;
+    
+    self.scubanaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
 }
 
 

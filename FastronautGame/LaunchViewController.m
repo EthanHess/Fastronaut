@@ -41,7 +41,7 @@
 
     }
     
-    if (self.rocketShip.center.y < - 1000) {
+    if (self.rocketShip.center.y < - 250) {
         
         [self.rocketTimer invalidate];
         

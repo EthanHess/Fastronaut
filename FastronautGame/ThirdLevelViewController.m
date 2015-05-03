@@ -134,7 +134,9 @@
     self.startGame.hidden = NO;
     self.fastronaut.hidden = NO;
     self.helicopter.hidden = NO;
-    self.tryAgain.hidden = YES; 
+    self.tryAgain.hidden = YES;
+    
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
     
 }
