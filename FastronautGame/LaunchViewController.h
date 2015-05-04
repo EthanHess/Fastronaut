@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *launchButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 @property (weak, nonatomic) IBOutlet UIImageView *rocketShip;
-@property (weak, nonatomic) IBOutlet UIImageView *fireBlast;
 @property (nonatomic, strong) NSTimer *rocketTimer;
 
 

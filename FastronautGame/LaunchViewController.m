@@ -18,13 +18,12 @@
     [super viewDidLoad];
     
     self.proceedButton.hidden = YES;
-    self.fireBlast.hidden = YES;
     
 }
 
 - (IBAction)launchRocket:(id)sender {
     
-    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.025 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
+    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
     
     self.launchButton.hidden = YES;
     
@@ -36,8 +35,7 @@
     
     if (self.rocketShip.center.y < 200) {
         
-        self.fireBlast.hidden = NO;
-        self.fireBlast.center = CGPointMake(self.fireBlast.center.x, self.rocketShip.center.y - 1);
+        self.rocketShip.image = [UIImage imageNamed:@"fireBlast"];
 
     }
     
@@ -50,11 +48,6 @@
     
 }
 
-- (void)placeFireBlast {
-    
-    self.fireBlast.center = CGPointMake(self.fireBlast.center.x, self.rocketShip.center.y + 250);
-    
-}
 
 
 - (void)didReceiveMemoryWarning {
