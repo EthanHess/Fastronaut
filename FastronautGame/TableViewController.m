@@ -72,7 +72,7 @@
             
             ViewController *viewController = [ViewController new];
             
-            [self.navigationController pushViewController:viewController animated:YES];
+            [self presentViewController:viewController animated:YES completion:nil];
             
             break; }
             

@@ -111,7 +111,7 @@
     
     self.Exit.hidden = NO;
     self.topBullet.hidden = YES;
-    self.fastronaut.hidden = YES; 
+    self.fastronaut.hidden = YES;
     
     
 }
@@ -129,6 +129,16 @@
         self.fastronaut.hidden = YES; 
     }
     
+}
+
+- (IBAction)resetGame:(id)sender {
+    
+    self.startGame.hidden = NO;
+    self.Exit.hidden = YES;
+    self.fastronaut.hidden = NO;
+    self.topBullet.hidden = NO;
+    
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
 }
 
 - (void)play {
