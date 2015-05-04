@@ -103,6 +103,72 @@
             </objects>
             <point key="canvasLocation" x="300" y="975"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZmG-p2-ebs">
+            <objects>
+                <viewController id="Puc-cB-Thh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B7m-yn-Yxa"/>
+                        <viewControllerLayoutGuide type="bottom" id="sWw-fv-f5W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yft-2z-zcC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castleView" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-1t-MuS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gs0-nG-OUb">
+                                <rect key="frame" x="113" y="426" width="406" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="H9G-g7-eAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zMr-Z9-x8x" kind="show" id="zWq-55-xTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGj-93-b78">
+                                <rect key="frame" x="147" y="253" width="307" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Try Again!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivr-jZ-Qty">
+                                <rect key="frame" x="197" y="88" width="207" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin! ">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gs0-nG-OUb" firstAttribute="top" secondItem="kGj-93-b78" secondAttribute="bottom" constant="79" id="2Lf-Ba-StS"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="centerY" secondItem="kGj-93-b78" secondAttribute="centerY" id="BTt-UR-3m0"/>
+                            <constraint firstItem="sWw-fv-f5W" firstAttribute="top" secondItem="Gs0-nG-OUb" secondAttribute="bottom" constant="83" id="O8f-cd-6WA"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="leading" secondItem="Yft-2z-zcC" secondAttribute="leading" id="Uc1-lu-RcI"/>
+                            <constraint firstAttribute="trailing" secondItem="Fxe-1t-MuS" secondAttribute="trailing" id="VC0-S2-gJq"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="centerX" secondItem="kGj-93-b78" secondAttribute="centerX" id="Xrz-XL-CCl"/>
+                            <constraint firstItem="Gs0-nG-OUb" firstAttribute="leading" secondItem="Yft-2z-zcC" secondAttribute="leadingMargin" constant="97" id="brN-h6-tIG"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="top" secondItem="Yft-2z-zcC" secondAttribute="top" id="iPS-Fq-FYh"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="bottom" secondItem="sWw-fv-f5W" secondAttribute="top" id="kVc-k9-htU"/>
+                            <constraint firstItem="Fxe-1t-MuS" firstAttribute="centerX" secondItem="Ivr-jZ-Qty" secondAttribute="centerX" id="puT-qE-MxO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gs0-nG-OUb" secondAttribute="trailing" constant="65" id="zZR-IV-c1P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POJ-gX-lHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="965"/>
+        </scene>
         <!--First Level View Controller-->
         <scene sceneID="FDa-9J-J34">
             <objects>
@@ -158,7 +224,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zMr-Z9-x8x" kind="show" id="R0d-ag-kFC"/>
+                                    <segue destination="Puc-cB-Thh" kind="show" id="sVV-s2-XrV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -285,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fS1-JR-Zg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="286"/>
+            <point key="canvasLocation" x="946" y="1654"/>
         </scene>
         <!--Third Level View Controller-->
         <scene sceneID="Kjn-cQ-aV3">
@@ -379,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8h-pA-8Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2275" y="286"/>
+            <point key="canvasLocation" x="1592" y="1654"/>
         </scene>
         <!--Fourth Level View Controller-->
         <scene sceneID="IV7-0q-9yv">
@@ -479,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW7-A3-XcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2949" y="286"/>
+            <point key="canvasLocation" x="1592" y="965"/>
         </scene>
         <!--Fifth Level View Controller-->
         <scene sceneID="Mtl-2P-Aav">
@@ -579,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYP-oE-JvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3580" y="286"/>
+            <point key="canvasLocation" x="1592" y="286"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="VZ5-SB-b25">
@@ -658,7 +724,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKf-As-XPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4218" y="286"/>
+            <point key="canvasLocation" x="2240" y="286"/>
         </scene>
         <!--Sixth Level View Controller-->
         <scene sceneID="foP-Zf-aYQ">
@@ -706,7 +772,7 @@
                                     <constraint firstAttribute="width" constant="214" id="zPt-lS-WFi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Try Again!">
+                                <state key="normal" title="Try Again">
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -753,7 +819,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ody-oj-9er" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4869" y="286"/>
+            <point key="canvasLocation" x="2240" y="965"/>
         </scene>
     </scenes>
     <resources>
@@ -768,6 +834,7 @@
         <image name="RocketShip" width="150" height="300"/>
         <image name="SpaceGameFirstLevel" width="335" height="550"/>
         <image name="SpaceGameLevelThree" width="335" height="550"/>
+        <image name="castleView" width="335" height="550"/>
         <image name="chemicalDrop" width="60" height="50"/>
         <image name="chemicals" width="160" height="120"/>
         <image name="cityCopter" width="120" height="90"/>
