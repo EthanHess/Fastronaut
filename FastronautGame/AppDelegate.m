@@ -18,18 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    
-//    ViewController *viewController = [ViewController new];
-//    
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-//    
-//    self.window.rootViewController = navController;
-//    
-//    self.window.backgroundColor = [UIColor clearColor];
-//    
-//    [self.window makeKeyAndVisible];
-    
     
     return YES;
 }
