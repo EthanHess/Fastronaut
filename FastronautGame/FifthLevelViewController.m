@@ -100,7 +100,7 @@
     self.chemDrop.center = CGPointMake(self.chemDrop.center.x + 1, self.chemDrop.center.y);
     
     
-    if (self.chemDrop.center.x == 380) {
+    if (self.chemDrop.center.x > 380) {
         [self placeChemDrop];
     }
     

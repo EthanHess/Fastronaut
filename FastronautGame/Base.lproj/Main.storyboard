@@ -1036,6 +1036,10 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicalDrop" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-gz-tiG">
                                 <rect key="frame" x="24" y="473" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2OP-wX-Qxx"/>
+                                    <constraint firstAttribute="width" constant="60" id="I3Q-cd-peZ"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-3e-dGd">
                                 <rect key="frame" x="181" y="82" width="239" height="56"/>

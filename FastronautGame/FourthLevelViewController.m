@@ -8,6 +8,8 @@
 
 #import "FourthLevelViewController.h"
 
+#define ARC4RANDOM_MAX      0x100000000
+
 @interface FourthLevelViewController ()
 
 @end
@@ -65,9 +67,22 @@
 
 - (void)daggerMoving {
     
-    int range = fmodf(arc4random(), -.5) + .5;
+//    float value = (float)(arc4random())/ARC4RANDOM_MAX/2.0f;
+//    
+//    
+//    int test = arc4random_uniform(2);
+//    
+//    NSLog(@"%i", test);
+//    
+//    
+//    if (test)
+//    {
+//        value *= -1;
+//    }
+    
+    int value = 1;
 
-    self.iceDagger.center = CGPointMake(self.iceDagger.center.x - 1, self.iceDagger.center.y + range);
+    self.iceDagger.center = CGPointMake(self.iceDagger.center.x - 1, self.iceDagger.center.y + value);
     
     if (self.iceDagger.center.x < -35) {
         [self placeDagger];
