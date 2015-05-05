@@ -23,7 +23,7 @@
 
 - (IBAction)launchRocket:(id)sender {
     
-    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
+    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
     
     self.launchButton.hidden = YES;
     

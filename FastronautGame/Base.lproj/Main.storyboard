@@ -563,6 +563,29 @@
             <point key="canvasLocation" x="1592" y="2984"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Dui-el-EKb">
+            <objects>
+                <viewController id="O8X-2c-SZc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usV-G5-Qwz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ul3-kB-plo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zZi-BI-eQp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="ziL-Fh-Ebs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGO-6N-FHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="2986"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="TsT-W2-Ako">
             <objects>
                 <viewController id="3oz-hC-opy" sceneMemberID="viewController">
@@ -621,6 +644,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxI-yp-9Pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1591" y="2320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Ym-wb-9BH">
+            <objects>
+                <viewController id="oqA-de-X9w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YHe-xY-VPo"/>
+                        <viewControllerLayoutGuide type="bottom" id="rsO-bT-TIg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5id-f8-R8h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="venus" translatesAutoresizingMaskIntoConstraints="NO" id="mhV-vv-qaJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygu-Jv-HQC">
+                                <rect key="frame" x="209" y="128" width="182" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click to Begin!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-hH-VcC">
+                                <rect key="frame" x="129" y="267" width="343" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-Du-bAl">
+                                <rect key="frame" x="84" y="409" width="433" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O8X-2c-SZc" kind="show" id="9f7-5x-vKI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ka9-Vu-Vy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="2320"/>
         </scene>
         <!--Third Level View Controller-->
         <scene sceneID="Kjn-cQ-aV3">
@@ -765,6 +835,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oqA-de-X9w" kind="show" id="sm9-nK-T7j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1199,6 +1272,7 @@
         <image name="cityUp" width="85" height="125"/>
         <image name="fastronautAstronaut" width="85" height="125"/>
         <image name="iceDagger" width="130" height="60"/>
+        <image name="mars" width="335" height="550"/>
         <image name="piranha" width="85" height="70"/>
         <image name="pyramidLevel" width="335" height="550"/>
         <image name="radioactiveUp" width="85" height="125"/>
@@ -1206,5 +1280,6 @@
         <image name="spaceGuyUp" width="85" height="125"/>
         <image name="sunView" width="335" height="550"/>
         <image name="swimUp" width="85" height="125"/>
+        <image name="venus" width="335" height="550"/>
     </resources>
 </document>
