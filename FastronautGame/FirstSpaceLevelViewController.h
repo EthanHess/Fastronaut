@@ -12,7 +12,7 @@ int scoreNumber;
 int astroFlight;
 int satellitePosition;
 
-@interface SixthLevelViewController : UIViewController
+@interface FirstSpaceLevelViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (weak, nonatomic) IBOutlet UIImageView *satellite;

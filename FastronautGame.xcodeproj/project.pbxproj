@@ -22,7 +22,7 @@
 		27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */; };
 		27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */; };
 		27D423231AF4239F0099F224 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423221AF4239F0099F224 /* LaunchViewController.m */; };
-		27D423671AF5BE790099F224 /* SixthLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423661AF5BE790099F224 /* SixthLevelViewController.m */; };
+		27D423671AF5BE790099F224 /* FirstSpaceLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423661AF5BE790099F224 /* FirstSpaceLevelViewController.m */; };
 		27D4236D1AF6F8A00099F224 /* SecondLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4236C1AF6F8A00099F224 /* SecondLevelView.m */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +66,8 @@
 		27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdLevelViewController.m; sourceTree = "<group>"; };
 		27D423211AF4239F0099F224 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		27D423221AF4239F0099F224 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
-		27D423651AF5BE790099F224 /* SixthLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthLevelViewController.h; sourceTree = "<group>"; };
-		27D423661AF5BE790099F224 /* SixthLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthLevelViewController.m; sourceTree = "<group>"; };
+		27D423651AF5BE790099F224 /* FirstSpaceLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstSpaceLevelViewController.h; sourceTree = "<group>"; };
+		27D423661AF5BE790099F224 /* FirstSpaceLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpaceLevelViewController.m; sourceTree = "<group>"; };
 		27D4236B1AF6F8A00099F224 /* SecondLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelView.h; sourceTree = "<group>"; };
 		27D4236C1AF6F8A00099F224 /* SecondLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,8 +143,8 @@
 				276EA6071AF2FBD600598EB1 /* FifthLevelViewController.m */,
 				27D423211AF4239F0099F224 /* LaunchViewController.h */,
 				27D423221AF4239F0099F224 /* LaunchViewController.m */,
-				27D423651AF5BE790099F224 /* SixthLevelViewController.h */,
-				27D423661AF5BE790099F224 /* SixthLevelViewController.m */,
+				27D423651AF5BE790099F224 /* FirstSpaceLevelViewController.h */,
+				27D423661AF5BE790099F224 /* FirstSpaceLevelViewController.m */,
 				27CAC71D1AE0B944007B67C4 /* Images.xcassets */,
 				27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */,
 				27CAC7101AE0B944007B67C4 /* Supporting Files */,
@@ -295,7 +295,7 @@
 				276EA5FF1AF2BBDC00598EB1 /* FourthLevelViewController.m in Sources */,
 				276EA6051AF2ECB100598EB1 /* SoundController.m in Sources */,
 				27CAC7131AE0B944007B67C4 /* main.m in Sources */,
-				27D423671AF5BE790099F224 /* SixthLevelViewController.m in Sources */,
+				27D423671AF5BE790099F224 /* FirstSpaceLevelViewController.m in Sources */,
 				27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */,
 				276EA6021AF2E0BB00598EB1 /* TableViewController.m in Sources */,
 				27D423231AF4239F0099F224 /* LaunchViewController.m in Sources */,

@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "SixthLevelViewController.h"
+#import "FirstSpaceLevelViewController.h"
 
-@interface SixthLevelViewController ()
+@interface FirstSpaceLevelViewController ()
 
 @end
 
-@implementation SixthLevelViewController
+@implementation FirstSpaceLevelViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

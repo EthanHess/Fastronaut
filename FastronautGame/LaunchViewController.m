@@ -31,11 +31,14 @@
 
 - (void)rocketUp {
     
+    int blastHeight = 450;
+    
     self.rocketShip.center = CGPointMake(self.rocketShip.center.x, self.rocketShip.center.y - 1);
     
     if (self.rocketShip.center.y < 200) {
         
         self.rocketShip.image = [UIImage imageNamed:@"fireBlast"];
+        self.rocketShip.frame.size.height == blastHeight;
 
     }
     
