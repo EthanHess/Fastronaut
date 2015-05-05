@@ -70,9 +70,9 @@
     switch (indexPath.row) {
         case 0: {
             
-            ViewController *viewController = [ViewController new];
+            ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"viewController"];
             
-            [self presentViewController:viewController animated:YES completion:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
             
             break; }
             
@@ -102,7 +102,7 @@
             
         case 4: {
             
-            FourthLevelViewController *fourthLevel = [FourthLevelViewController new];
+            FourthLevelViewController *fourthLevel = [self.storyboard instantiateViewControllerWithIdentifier:@"fourthLevel"];
             
             [self.navigationController pushViewController:fourthLevel animated:YES];
             
@@ -110,7 +110,7 @@
             
         case 5: {
             
-            FifthLevelViewController *fifthLevel = [FifthLevelViewController new];
+            FifthLevelViewController *fifthLevel = [self.storyboard instantiateViewControllerWithIdentifier:@"levelFive"];
             
             [self.navigationController pushViewController:fifthLevel animated:YES];
             

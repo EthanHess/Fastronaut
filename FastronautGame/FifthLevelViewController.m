@@ -31,12 +31,14 @@
     
     self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
     
-    [self placeChemDrop];
     [self placeChemBlob];
+    
+    [self placeChemDrop];
     
     self.chemTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(chemBlobMoving) userInfo:nil repeats:YES];
     
     self.chemTimerTwo = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(chemDropMoving) userInfo:nil repeats:YES];
+    
     
 }
 
@@ -97,13 +99,14 @@
     
     self.chemDrop.center = CGPointMake(self.chemDrop.center.x + 1, self.chemDrop.center.y);
     
+    
     if (self.chemDrop.center.x == 380) {
         [self placeChemDrop];
     }
     
-//    if (CGRectIntersectsRect(self.fastronaut.frame, self.chemDrop.frame)) {
-//        [self gameEnded];
-//    }
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.chemDrop.frame)) {
+        [self gameEnded];
+    }
     
 }
 
