@@ -113,6 +113,8 @@
     self.topBullet.hidden = YES;
     self.fastronaut.hidden = YES;
     
+    scoreNumber = 0;
+    
     
 }
 

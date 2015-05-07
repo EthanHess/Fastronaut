@@ -119,6 +119,8 @@
     self.gameOver.hidden = NO;
     self.piranha.hidden = YES;
     
+    scoreNumber = 0; 
+    
 }
 
 - (void)score {

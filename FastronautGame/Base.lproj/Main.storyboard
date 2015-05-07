@@ -1095,7 +1095,7 @@
         <!--Launch View Controller-->
         <scene sceneID="VZ5-SB-b25">
             <objects>
-                <viewController id="1s7-xS-B21" customClass="LaunchViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="launch" id="1s7-xS-B21" customClass="LaunchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d9e-vl-BmE"/>
                         <viewControllerLayoutGuide type="bottom" id="VCE-EP-t6a"/>

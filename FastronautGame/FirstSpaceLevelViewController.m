@@ -7,6 +7,9 @@
 //
 
 #import "FirstSpaceLevelViewController.h"
+#import <math.h>
+
+static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 @interface FirstSpaceLevelViewController ()
 
@@ -32,7 +35,7 @@
     
     [self placeSatellite];
     
-    self.satTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(satelliteMoving) userInfo:nil repeats:YES];
+    self.satTimer = [NSTimer scheduledTimerWithTimeInterval:0.0035 target:self selector:@selector(satelliteMoving) userInfo:nil repeats:YES];
     
     
 }
@@ -66,6 +69,7 @@
 - (void)satelliteMoving {
     
     self.satellite.center = CGPointMake(self.satellite.center.x - 1, self.satellite.center.y);
+    [self animateView:self.satellite duration:5];
     
     if (self.satellite.center.x < -35) {
         [self placeSatellite];
@@ -96,7 +100,9 @@
     
     satellitePosition = arc4random() %frame;
     
-    self.satellite.center = CGPointMake(380, satellitePosition);
+    self.satellite.center = CGPointMake(420, satellitePosition);
+    
+    [self animateView:self.satellite duration:5];
     
 }
 
@@ -124,6 +130,8 @@
     self.tryAgain.hidden = NO;
     self.satellite.hidden = YES;
     
+    scoreNumber = 0;
+    
 }
 
 
@@ -140,6 +148,17 @@
     
 }
 
+- (void)animateView:(UIView *)view duration:(float)duration {
+    
+    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
+    
+    [UIView animateWithDuration:duration animations:^{
+        
+    view.transform = rotate;
+
+    }];
+    
+}
 
 
 - (void)didReceiveMemoryWarning {

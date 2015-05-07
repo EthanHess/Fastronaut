@@ -13,6 +13,7 @@
 #import "ThirdLevelViewController.h"
 #import "FourthLevelViewController.h"
 #import "FifthLevelViewController.h"
+#import "LaunchViewController.h"
 
 @interface TableViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -116,7 +117,16 @@
             
             break; }
             
-        default:
+        case 6: {
+            
+            LaunchViewController *launch = [self.storyboard instantiateViewControllerWithIdentifier:@"launch"];
+            
+            [self.navigationController pushViewController:launch animated:YES];
+            
+            break; }
+        
+            
+            default:
             break;
     }
 }

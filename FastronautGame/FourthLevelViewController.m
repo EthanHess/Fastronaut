@@ -80,6 +80,8 @@
 //        value *= -1;
 //    }
     
+//    int value = arc4random_uniform(-1) + 2;
+    
     int value = 1;
 
     self.iceDagger.center = CGPointMake(self.iceDagger.center.x - 1, self.iceDagger.center.y + value);
@@ -140,6 +142,7 @@
     self.tryAgain.hidden = NO;
     self.iceDagger.hidden = YES;
     
+    scoreNumber = 0; 
 }
 
 

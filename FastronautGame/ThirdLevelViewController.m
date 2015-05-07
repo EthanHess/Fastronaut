@@ -126,7 +126,7 @@
     self.tryAgain.hidden = NO;
     self.helicopter.hidden = YES;
     
-    
+    scoreNumber = 0; 
 }
 
 - (IBAction)restartGame:(id)sender {

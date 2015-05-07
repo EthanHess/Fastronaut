@@ -116,7 +116,7 @@
     
     chemPostition = arc4random() %frame;
     
-    self.chemBlob.center = CGPointMake(380, chemPostition);
+    self.chemBlob.center = CGPointMake(420, chemPostition);
     
 }
 
@@ -157,6 +157,8 @@
     self.tryAgain.hidden = NO;
     self.chemBlob.hidden = YES;
     self.chemDrop.hidden = YES;
+    
+    scoreNumber = 0; 
     
 }
 
