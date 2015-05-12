@@ -19,17 +19,20 @@
     
     self.proceedButton.hidden = YES;
     
+    self.soundController = [SoundController new];
+    
 }
 
 - (IBAction)launchRocket:(id)sender {
     
-    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
+    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.0025 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
     
     self.launchButton.hidden = YES;
     
 }
 
 - (void)rocketUp {
+    
     
     int blastHeight = 450;
     
@@ -39,6 +42,8 @@
         
         self.rocketShip.image = [UIImage imageNamed:@"fireBlast"];
         self.rocketShip.frame.size.height == blastHeight;
+        
+        [self blastOffSound];
 
     }
     
@@ -48,6 +53,14 @@
         
         self.proceedButton.hidden = NO;
     }
+    
+}
+
+- (void)blastOffSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"spaceshipTakeoff" withExtension:@"mp3"];
+    
+    [self.soundController playAudioFileAtURL:url];
     
 }
 

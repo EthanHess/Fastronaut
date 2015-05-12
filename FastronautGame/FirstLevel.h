@@ -13,7 +13,7 @@ int astroFlight;
 int randomTopBulletPosition;
 int scoreNumber;
 
-@interface FirstLevelViewController : UIViewController
+@interface FirstLevel : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *startGame;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;

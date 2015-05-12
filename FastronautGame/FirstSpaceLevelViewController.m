@@ -69,10 +69,11 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 - (void)satelliteMoving {
     
     self.satellite.center = CGPointMake(self.satellite.center.x - 1, self.satellite.center.y);
-    [self animateView:self.satellite duration:5];
+    [self animateView:self.satellite duration:5.0];
     
     if (self.satellite.center.x < -35) {
         [self placeSatellite];
+        [self animateView:self.satellite duration:5.0];
     }
     
     if (self.satellite.center.x == 30) {
@@ -102,7 +103,6 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     
     self.satellite.center = CGPointMake(420, satellitePosition);
     
-    [self animateView:self.satellite duration:5];
     
 }
 

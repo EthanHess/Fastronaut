@@ -8,7 +8,7 @@
 
 #import "TableViewController.h"
 #import "ViewController.h"
-#import "FirstLevelViewController.h"
+#import "FirstLevel.h"
 #import "SecondLevelViewController.h"
 #import "ThirdLevelViewController.h"
 #import "FourthLevelViewController.h"
@@ -79,7 +79,7 @@
             
         case 1: {
             
-            FirstLevelViewController *firstLevel = [FirstLevelViewController new];
+            FirstLevel *firstLevel = [FirstLevel new];
             
             [self.navigationController pushViewController:firstLevel animated:YES];
             

@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "FirstLevelViewController.h"
+#import "FirstLevel.h"
 
-@interface FirstLevelViewController ()
+@interface FirstLevel ()
 
 @end
 
-@implementation FirstLevelViewController
+@implementation FirstLevel
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -18,12 +18,13 @@
 		27CAC71E1AE0B944007B67C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CAC71D1AE0B944007B67C4 /* Images.xcassets */; };
 		27CAC7211AE0B944007B67C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */; };
 		27CAC72D1AE0B945007B67C4 /* FastronautGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC72C1AE0B945007B67C4 /* FastronautGameTests.m */; };
-		27CAC7481AE24F06007B67C4 /* FirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */; };
+		27CAC7481AE24F06007B67C4 /* FirstLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC7471AE24F06007B67C4 /* FirstLevel.m */; };
 		27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */; };
 		27CDDBED1AE84B3E0073AA27 /* ThirdLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CDDBEC1AE84B3E0073AA27 /* ThirdLevelViewController.m */; };
 		27D423231AF4239F0099F224 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423221AF4239F0099F224 /* LaunchViewController.m */; };
 		27D423671AF5BE790099F224 /* FirstSpaceLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D423661AF5BE790099F224 /* FirstSpaceLevelViewController.m */; };
 		27D4236D1AF6F8A00099F224 /* SecondLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4236C1AF6F8A00099F224 /* SecondLevelView.m */; };
+		27D424921AFD1B390099F224 /* spaceshipTakeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27D424911AFD1B390099F224 /* spaceshipTakeoff.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,8 @@
 		27CAC7261AE0B944007B67C4 /* FastronautGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastronautGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CAC72B1AE0B945007B67C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CAC72C1AE0B945007B67C4 /* FastronautGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastronautGameTests.m; sourceTree = "<group>"; };
-		27CAC7461AE24F06007B67C4 /* FirstLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLevelViewController.h; sourceTree = "<group>"; };
-		27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLevelViewController.m; sourceTree = "<group>"; };
+		27CAC7461AE24F06007B67C4 /* FirstLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLevel.h; sourceTree = "<group>"; };
+		27CAC7471AE24F06007B67C4 /* FirstLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLevel.m; sourceTree = "<group>"; };
 		27CDDBB61AE7FE2B0073AA27 /* SecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelViewController.h; sourceTree = "<group>"; };
 		27CDDBB71AE7FE2B0073AA27 /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
 		27CDDBEB1AE84B3E0073AA27 /* ThirdLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdLevelViewController.h; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		27D423661AF5BE790099F224 /* FirstSpaceLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpaceLevelViewController.m; sourceTree = "<group>"; };
 		27D4236B1AF6F8A00099F224 /* SecondLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelView.h; sourceTree = "<group>"; };
 		27D4236C1AF6F8A00099F224 /* SecondLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelView.m; sourceTree = "<group>"; };
+		27D424911AFD1B390099F224 /* spaceshipTakeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spaceshipTakeoff.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,11 +92,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		276EA5F81AF1AA7E00598EB1 /* Sound Controller */ = {
+		276EA5F81AF1AA7E00598EB1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Sound Controller";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		27CAC7041AE0B944007B67C4 = {
@@ -125,12 +127,12 @@
 				276EA6001AF2E0BB00598EB1 /* TableViewController.h */,
 				276EA6011AF2E0BB00598EB1 /* TableViewController.m */,
 				27CAC71A1AE0B944007B67C4 /* Main.storyboard */,
-				276EA5F81AF1AA7E00598EB1 /* Sound Controller */,
+				276EA5F81AF1AA7E00598EB1 /* Controllers */,
 				276EA6031AF2ECB100598EB1 /* SoundController.h */,
 				276EA6041AF2ECB100598EB1 /* SoundController.m */,
 				27CDDBB51AE7FDFE0073AA27 /* Levels */,
-				27CAC7461AE24F06007B67C4 /* FirstLevelViewController.h */,
-				27CAC7471AE24F06007B67C4 /* FirstLevelViewController.m */,
+				27CAC7461AE24F06007B67C4 /* FirstLevel.h */,
+				27CAC7471AE24F06007B67C4 /* FirstLevel.m */,
 				27D4236B1AF6F8A00099F224 /* SecondLevelView.h */,
 				27D4236C1AF6F8A00099F224 /* SecondLevelView.m */,
 				27CDDBB61AE7FE2B0073AA27 /* SecondLevelViewController.h */,
@@ -148,6 +150,7 @@
 				27CAC71D1AE0B944007B67C4 /* Images.xcassets */,
 				27CAC71F1AE0B944007B67C4 /* LaunchScreen.xib */,
 				27CAC7101AE0B944007B67C4 /* Supporting Files */,
+				27D424911AFD1B390099F224 /* spaceshipTakeoff.mp3 */,
 			);
 			name = "Fastronaut Game";
 			path = FastronautGame;
@@ -268,6 +271,7 @@
 			files = (
 				27CAC71C1AE0B944007B67C4 /* Main.storyboard in Resources */,
 				27CAC7211AE0B944007B67C4 /* LaunchScreen.xib in Resources */,
+				27D424921AFD1B390099F224 /* spaceshipTakeoff.mp3 in Resources */,
 				27CAC71E1AE0B944007B67C4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CAC7481AE24F06007B67C4 /* FirstLevelViewController.m in Sources */,
+				27CAC7481AE24F06007B67C4 /* FirstLevel.m in Sources */,
 				27CDDBB81AE7FE2B0073AA27 /* SecondLevelViewController.m in Sources */,
 				27CAC7191AE0B944007B67C4 /* ViewController.m in Sources */,
 				27D4236D1AF6F8A00099F224 /* SecondLevelView.m in Sources */,
